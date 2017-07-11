@@ -1,0 +1,162 @@
+header {
+    height: 60px;
+    border-bottom: solid 2px #03A9F4;
+}
+
+.menu {
+    height: 100%;
+
+    display: none;
+}
+
+.menu nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.menuItem {
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    width: 70px;
+    justify-content: center;
+}
+
+.menuItem:hover {
+    transition: .3s;
+    letter-spacing: 4px;
+    background: #03A9F4;
+    color: white;
+}
+
+.menuItem h4 {
+    font-size: 1.3em;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+/*
+mobile menu*/
+
+
+.toggleMenu {
+  float: right;
+  height: 26px;
+
+  width: 40px;
+  margin: 17px;
+  display: inline-block;
+  }
+
+  .bars {
+  top: 5px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 24px;
+}
+
+
+
+
+
+.mobile-menu {
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left:100%;
+  background: #ededff;
+  transition: .2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 60px;
+}
+.show-mobile-menu {
+  left: 0%;
+  transition: .5s;
+}
+
+.mobile-menu-row {
+  width: 100%;
+  text-align: center;
+  margin: 3px 0  ;
+  background: #03A9F4;
+  border-color: rgb(173, 216, 230);
+  border-width: 3px 0 3px;
+  border-style: solid;
+
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu-row:hover {
+    background: rgb(173, 216, 230);
+    transition: .3s;
+    letter-spacing: 4px;
+
+}
+
+.mobile-menu-row:hover a {
+    color: grey;
+
+}
+.mobile-menu-row a {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #ead7d7;
+    width: 100%;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 500px) {
+  .menu {
+      display: block;
+  }
+
+  .toggleMenu{
+    display: none;
+  }
+  .mobileMenu {
+    display: none;
+  }
+
+
+
+}
