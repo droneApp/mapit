@@ -4,7 +4,24 @@ import {Link} from 'react-router-dom'
 
 import './header.css'
 
+
+
+
+
 export default function Header(){
+  // getInitialState: function() {
+  //   return { showMobile: false };
+  // },
+  //
+  //
+  // onClick: function() {
+  //
+  //     this.setState({ showResults: true });
+  // },
+  //
+
+
+
   return (
 
     <header>
@@ -44,7 +61,7 @@ export default function Header(){
       </div>
 
 
-      <div className="toggleMenu">
+      <div className="toggleMenu" >
         <div className="bars">
           <div className="bar bar1"></div>
           <div className="bar bar2"></div>

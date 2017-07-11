@@ -89,7 +89,7 @@ mobile menu*/
   left:100%;
   background: #ededff;
   transition: .2s;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   top: 60px;
