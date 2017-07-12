@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import Header from './comps/header/Header'
-import Footer from './comps/footer/Footer'
+import Header from '../header/Header'
+import Footer from '../footer/Footer'
 
 import './home.css'
 
@@ -13,7 +13,10 @@ export default function Home(){
 
 
 
+      <div className="spacer">
 
+
+      </div>
 
 
       <Footer />
