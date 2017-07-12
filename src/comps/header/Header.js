@@ -8,20 +8,24 @@ import './header.css'
 
 
 
-export default function Header(){
-  // getInitialState: function() {
-  //   return { showMobile: false };
-  // },
+export default class Header extends Component{
+  // constructor(props) {
+  // super(props);
+  // this.state = {showMobile: false};
   //
   //
-  // onClick: function() {
   //
-  //     this.setState({ showResults: true });
-  // },
   //
+  //
+  // }
+  //
+  //
+  // mobileShow: () => {
+  //     this.state = { showMobile: true };
+  // }
 
 
-
+render(){
   return (
 
     <header>
@@ -60,21 +64,28 @@ export default function Header(){
         </nav>
       </div>
 
+<div className="mobileBar">
+      <div className="mobileLogo">
+        <p>[logo]</p>
+      </div>
 
-      <div className="toggleMenu" >
+
+
+
+      <div className="toggleMenu">
         <div className="bars">
           <div className="bar bar1"></div>
           <div className="bar bar2"></div>
           <div className="bar bar3"></div>
         </div>
       </div>
+</div>
 
 
 
 
 
-
-      <div className="mobileMenu">
+      {/* <div className="mobileMenu">
 
 
 
@@ -91,7 +102,7 @@ export default function Header(){
           <a><p>FLY</p></a>
         </div>
 
-      </div>
+      </div> */}
 
 
 
@@ -104,4 +115,6 @@ export default function Header(){
   )
 
 // end of home
+}
+// end of render
 }

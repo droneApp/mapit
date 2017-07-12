@@ -50,7 +50,11 @@ header {
 
 /*
 mobile menu*/
-
+.mobileBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .toggleMenu {
   float: right;
@@ -156,7 +160,9 @@ mobile menu*/
   .mobileMenu {
     display: none;
   }
-
+  .mobileBar {
+    display: none;
+  }
 
 
 }
