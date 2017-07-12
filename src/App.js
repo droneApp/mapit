@@ -7,7 +7,11 @@ import Header from './comps/header/Header'
 class App extends Component {
   render() {
     return (
+
+     
+
       <Home/>
+
 
 
 
