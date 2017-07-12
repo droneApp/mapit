@@ -1,4 +1,34 @@
+h2{
+    display: flex;
+    justify-content: center;
+	align-items: baseline;
+}
+p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    padding-bottom: 20px;
+}
+
+.steen-about-pics{
+        width: 346px;
+}
 .about-pics {
     height:68vh;
     
+}
+
+.top-row{
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+}
+
+.bottom-row{
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
 }
