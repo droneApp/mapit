@@ -137,32 +137,3 @@ mobile menu*/
     color: white;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 500px) {
-  .menu {
-      display: block;
-  }
-
-  .toggleMenu{
-    display: none;
-  }
-  .mobileMenu {
-    display: none;
-  }
-  .mobileBar {
-    display: none;
-  }
-
-
-}
