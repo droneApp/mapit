@@ -14,6 +14,7 @@
     "mapbox-gl": "^0.38.0",
     "massive": "^3.0.0",
     "node-bebop": "^0.6.0",
+    "parallax-js": "^3.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-map": "0.0.2",

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React from 'react';
-=======
 import React, {Component} from 'react';
->>>>>>> master
 import './team.css';
 class App extends Component {
     render() {
