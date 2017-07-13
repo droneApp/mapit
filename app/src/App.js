@@ -16,6 +16,7 @@ class App extends Component {
         <Route exact path="/" component={Home}/>
         <Route path="/team" component={Team}/>
         <Route path="/tech" component={Tech}/>
+        <Route path="/Map" component={Map}/>
       </Switch>
       </HashRouter>
       </div>
