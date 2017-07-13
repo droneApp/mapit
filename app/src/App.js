@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
-import Tech from './comps/tech/Tech'
-import Home from './comps/home/Home'
-import Header from './comps/header/Header'
+
+import { Switch, HashRouter, Route} from 'react-router-dom';
+import Home from './comps/home/Home';
+import Team from './comps/team/Team';
+import Tech from './comps/tech/Tech';
 import Drone from './comps/drone/Drone'
 
 class App extends Component {
   render() {
     return (
 
-
       <div>
-          <Drone />
+        <HashRouter>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/team" component={Team}/>
+        <Route path="/tech" component={Tech}/>
+      </Switch>
+      </HashRouter>
       </div>
+
+
 
 
 
