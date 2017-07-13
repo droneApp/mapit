@@ -132,8 +132,19 @@ div#dronediv {
 
   .bannerPiece img {
       max-width: 88%;
-      border-radius: 29px;
+      border-radius: 110px;
   }
+  .homeHeadingContain h3 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+.homeHeadingContain {
+    height: 153px;
+}
+.homeHeadingContain h4 {
+    line-height: 4em;
+}
+
   .bannerPiece h2 {
     text-align: center;
     position: relative;
