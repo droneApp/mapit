@@ -18,6 +18,10 @@ footer {
     width: 50%;
     align-items: center;
   }
+.footerMenu a {
+    text-decoration: none;
+    color: black;
+}
 
 
 

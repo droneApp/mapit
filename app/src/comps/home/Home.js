@@ -76,7 +76,7 @@ render(){
 
               <div id="dronediv" data-depth="0.87"><img src="./homeImgs/drone.png"/></div>
 
-              <div id="takeFlightBox" data-depth="0.18"><button id="takeFlight">Take Flight</button></div>
+              <div id="takeFlightBox" data-depth="0.18"><button id="takeFlight"><Link to="Map">Take Flight</Link></button></div>
 
 
           </div>

@@ -36,7 +36,10 @@ render(){
           </div>
 
           <div className="menuItem">
-            <h4>Team</h4>
+              {this.props.children}
+            <Link to="team"><h4>Team</h4></Link>
+
+            
           </div>
 
 
@@ -44,6 +47,7 @@ render(){
 
           <div className="logoContain">
             <div className="logo">
+            {this.props.children}
               <h4>[logo]</h4>
             </div>
           </div>
@@ -51,10 +55,12 @@ render(){
 
 
           <div className="menuItem">
-            <h4>Tech</h4>
+            {this.props.children}
+            <Link to="tech"><h4>Tech</h4></Link>
           </div>
 
           <div className="menuItem">
+          {this.props.children}
             <h4>Fly</h4>
           </div>
 
