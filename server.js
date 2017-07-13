@@ -10,7 +10,7 @@ const app = express();
 
 const drone = bebop.createClient();
 
-const port = 3050;
+const port = 3000;
 
 //controllers//
 
@@ -26,6 +26,6 @@ app.use(session({
 
 app.use(express.static('./src'));
 
-app.listen(3050, function() {
+app.listen(3000, function() {
     console.log(`Connected on port ${port}`)
 })
