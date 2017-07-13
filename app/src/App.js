@@ -20,9 +20,6 @@ class App extends Component {
       </HashRouter>
       </div>
 
-     
-
-      
 
 
 

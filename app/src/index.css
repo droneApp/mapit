@@ -33,6 +33,7 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -41,4 +42,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+img {
+    max-width: 100%;
+		display: flex;
+		margin: auto;
 }
