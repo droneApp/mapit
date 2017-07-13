@@ -139,30 +139,26 @@ mobile menu*/
 }
 
 
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 500px) {
+
   .menu {
+      height: 100%;
       display: block;
   }
 
-  .toggleMenu{
-    display: none;
-  }
-  .mobileMenu {
-    display: none;
-  }
   .mobileBar {
     display: none;
-  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 }

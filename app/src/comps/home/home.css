@@ -1,3 +1,176 @@
-.spacer {
-  height: 400px;
+
+h1.homeHeader {
+    text-align: center;
+    margin-top: 4vh;
+    letter-spacing: 1px;
+}
+
+.bannerContain {
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: column;
+  margin-top: 0vh;
+
+}
+
+.bannerPiece {
+
+}
+
+.bannerPiece img {
+    max-width: 240px;
+}
+.bannerPiece h2 {
+    text-align: center;
+    position: relative;
+    top: 113px;
+    background: black;
+    margin: auto;
+    color: white;
+    width: 30%;
+    padding: 4px;
+}
+.firstB  {
+
+
+}
+
+
+.secondB {
+
+
+}
+
+
+.thirdB {
+
+
+}
+
+.homeHeadingContain {
+    text-align: center;
+    background: rgba(91, 205, 247, 0.3);
+    margin-top: 16%;
+    height: 102px;
+    line-height: 2.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.homeHeadingContain h3 {
+    font-size: 1.4em;
+}
+
+
+
+
+
+div#mapDiv {
+    height: 100vh;
+    pointer-events: all !important;
+}
+
+
+#mapBG {
+    height: 100vh;
+}
+
+div#dronediv {
+    max-height: 100vh;
+    display: flex;
+}
+
+#mapBG img {
+    background-size: cover;
+    height: 100vh;
+    background-position: inherit;
+    overflow: hidden;
+    width: 100%;
+}
+
+#takeFlightBox {
+    width: 100%;
+    text-align: center;
+    margin: 50% auto;
+}
+
+#takeFlight {
+    border: #FAB2E6 2px solid;
+    padding: 12px;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
+    font-size: 1.5em;
+    width: 175px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#takeFlight:hover {
+    background: rgba(255, 255, 255, 0.76);
+    color: black;
+    border: #5BCDF7 3px dotted;
+}
+
+@media only screen and (min-width: 500px) {
+  h1.homeHeader {
+    text-align: center;
+    margin-top: 5%;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+  .bannerContain {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-top: 8vh;
+  }
+
+  .bannerPiece img {
+      max-width: 88%;
+      border-radius: 110px;
+  }
+  .homeHeadingContain h3 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+.homeHeadingContain {
+    height: 153px;
+}
+.homeHeadingContain h4 {
+    line-height: 4em;
+}
+
+  .bannerPiece h2 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    background: black;
+    margin: auto;
+    color: white;
+    width: 30%;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+.homeHeadingContain {
+
+    margin-top: 92px;
+
+}
+
+div#dronediv {
+    margin-left: 10%;
+}
+
+#takeFlightBox {
+    width: 100%;
+    text-align: center;
+    margin: 20% 20%;
+}
+
 }
