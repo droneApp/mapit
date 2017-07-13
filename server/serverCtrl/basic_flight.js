@@ -1,11 +1,11 @@
 module.exports = {
     takeOff: function(req, res) {
         drone.connect(function() {
-            drone.takeOff().then(drone.stop());
+            drone.Piloting.takeOff().then(drone.stop());
         });
     },
     land: function(req, res) {
-        drone.land();
+        drone.Piloting.land();
     },
     flyUp: function(req, res) {
         drone.up(val).then(drone.stop());
