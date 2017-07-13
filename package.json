@@ -1,7 +1,20 @@
 {
+
+  "name": "drone-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.10"
+  },
+
   "name": "mapit",
   "version": "1.0.0",
   "main": "server.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
