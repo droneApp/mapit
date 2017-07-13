@@ -33,7 +33,7 @@ const Map = ReactMapboxGl({
                     }
                 }
             }}/>
-    <Layer/>
+    </Layer>
 </Map>
 
 
