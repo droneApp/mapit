@@ -25,13 +25,13 @@ render(){
             <h4>Home</h4>
           </div>
           <div className="fmenuItem">
-            <h4>Team</h4>
+            <Link to="team"><h4>Team</h4></Link>
           </div>
 
         </div>  
           <div className="footerMenuRow">
             <div className="fmenuItem">
-              <h4>Tech</h4>
+              <Link to="tech"><h4>Tech</h4></Link>
             </div>
             <div className="fmenuItem">
               <h4>Fly</h4>

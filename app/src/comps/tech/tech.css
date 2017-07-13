@@ -1,0 +1,35 @@
+.head{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-bottom:15px;
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+img{
+    width: 170px;
+    height: 150px;
+}
+.scriptbox{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.description{
+    width:200px;
+}
+.tech{
+    margin-left:35px;
+}
+li{
+    margin-left: 50px;
+}
+.drone{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
