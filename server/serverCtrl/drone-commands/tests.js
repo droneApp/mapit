@@ -50,7 +50,7 @@ module.exports = {
 
       setTimeout(function() {
         // try changing this number to change the speed
-        drone.left(3);
+        drone.left(4);
       }, 2000);
 
       // stops
