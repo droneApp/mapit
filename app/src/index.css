@@ -48,3 +48,4 @@ img {
 		display: flex;
 		margin: auto;
 }
+html,body{overflow-x: hidden;}
