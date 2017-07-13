@@ -1,6 +1,3 @@
-.spacer {
-  height: 400px;
-}
 
 h1.homeHeader {
     text-align: center;
@@ -67,6 +64,57 @@ h1.homeHeader {
     font-size: 1.4em;
 }
 
+
+
+
+
+div#mapDiv {
+    height: 100vh;
+    pointer-events: all !important;
+}
+
+
+#mapBG {
+    height: 100vh;
+}
+
+div#dronediv {
+    max-height: 100vh;
+    display: flex;
+}
+
+#mapBG img {
+    background-size: cover;
+    height: 100vh;
+    background-position: inherit;
+    overflow: hidden;
+    width: 100%;
+}
+
+#takeFlightBox {
+    width: 100%;
+    text-align: center;
+    margin: 50% auto;
+}
+
+#takeFlight {
+    border: #FAB2E6 2px solid;
+    padding: 12px;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
+    font-size: 1.5em;
+    width: 175px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#takeFlight:hover {
+    background: rgba(255, 255, 255, 0.76);
+    color: black;
+    border: #5BCDF7 3px dotted;
+}
+
 @media only screen and (min-width: 500px) {
   h1.homeHeader {
     text-align: center;
@@ -102,6 +150,16 @@ h1.homeHeader {
 
     margin-top: 92px;
 
+}
+
+div#dronediv {
+    margin-left: 10%;
+}
+
+#takeFlightBox {
+    width: 100%;
+    text-align: center;
+    margin: 20% 20%;
 }
 
 }

@@ -4,19 +4,29 @@ import Header from '../header/Header'
 import Footer from '../footer/Footer'
 
 
-// import fly from './imgs/fly.jpg'
-// import pin from './imgs/pin.jpg'
-// import map from './imgs/map.png'
 
 import Parallax from 'parallax-js'
+//import Background from '../../public/homeImgs/map-bg.png';
 
 import './home.css'
 
-export default function Home(){
-var scene = document.getElementById('mapDiv')
+export default class Home extends React.Component {
 
-var parallax = new Parallax(scene)
 
+componentDidMount() {
+
+  var scene = document.getElementById('mapDiv')
+
+  var parallax = new Parallax(scene)
+
+
+
+}
+
+
+
+
+render(){
   return (
 
     <main>
@@ -62,8 +72,12 @@ var parallax = new Parallax(scene)
         </section>
         <section>
           <div id="mapDiv">
+              <div id="mapBG" data-depth="0.00"><img src="./homeImgs/map-bg.png" /></div>
 
-              <div className='layer' data-depth="0.40"><img src="./homeImgs/drone.png"/></div>
+              <div id="dronediv" data-depth="0.80"><img src="./homeImgs/drone.png"/></div>
+
+              <div id="takeFlightBox"><button id="takeFlight">Take Flight</button></div>
+
 
           </div>
         </section>
@@ -74,15 +88,7 @@ var parallax = new Parallax(scene)
 
 
 
-      <div className="spacer">
 
-
-
-
-
-
-
-      </div>
 
 
       <Footer />
@@ -92,8 +98,8 @@ var parallax = new Parallax(scene)
 
 
 
-  // end or return
-  )
+  // end of render return
+)}
 
 // end of home
 }
