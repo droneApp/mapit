@@ -1,14 +1,18 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import React, {Component} from 'react';
+>>>>>>> master
 import './team.css';
 class App extends Component {
     render() {
-        return ( 
+        return (
            <div>
             <head>
             <h2>About Us</h2>
             </head>
             <section class="top-row">
-                  <p> 
+                  <p>
                 <img class='steen-about-pics' src='./our-pics/16797776_10158254923960300_8611520582224132040_o.jpg' />
                 Steen</p>
                 <p>
