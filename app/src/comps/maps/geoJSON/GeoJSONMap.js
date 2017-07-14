@@ -18,27 +18,23 @@ const GettingStartedGoogleMap = withGoogleMap(props => (
   </GoogleMap>
 ));
 
-render(
-  <GettingStartedGoogleMap
-    containerElement={
-      <div style={{ height: `100%` }} />
-    }
-    mapElement={
-      <div style={{ height: `100%` }} />
-    }
-    onMapLoad={_.noop}
-    onMapClick={_.noop}
-    markers={markers}
-    onMarkerRightClick={_.noop}
-  />,
-  document.getElementById('root')
-);
-
 
 
 export default function geoJSONMap() {
-    return (
-        <h1>Pick Your Points</h1>
-        <GettingStartedGoogleMap />
-    )
+    render(){
+        return(
+            <GettingStartedGoogleMap
+                containerElement={
+                <div style={{ height: `100%` }} />
+                }
+                mapElement={
+                <div style={{ height: `100%` }} />
+                }
+                onMapLoad={_.noop}
+                onMapClick={_.noop}
+                markers={markers}
+                onMarkerRightClick={_.noop}
+            />,
+            document.getElementById('root')
+        )};
 }
