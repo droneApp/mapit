@@ -50,3 +50,9 @@ img {
 }
 
 html,body{overflow-x: hidden;}
+
+:root {
+	--primary-color: #5BCDF7;
+	--secondary-color: #591700;
+	--tertiary-color: #D6F484;
+}

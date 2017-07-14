@@ -11,7 +11,7 @@ h1.homeHeader {
   -ms-flex-direction: row;
   flex-direction: column;
   margin-top: 0vh;
-
+  background-color: var(--primary-color);
 }
 
 .bannerPiece {
