@@ -5,8 +5,9 @@ header {
 
 .menu {
     height: 100%;
-
     display: none;
+    
+    
 }
 
 .menu nav {
@@ -14,6 +15,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 
@@ -40,6 +42,10 @@ header {
     display: flex;
 }
 
+.menuItem a{
+    text-decoration: none;
+    color: black;
+}
 
 
 

@@ -95,6 +95,7 @@ div#dronediv {
     width: 100%;
     text-align: center;
     margin: 50% auto;
+    text-decoration: none;
 }
 
 #takeFlight {
@@ -107,6 +108,10 @@ div#dronediv {
     width: 175px;
     font-weight: 600;
     cursor: pointer;
+}
+#takeFlight a{
+    text-decoration: none;
+    color: white;
 }
 
 #takeFlight:hover {
