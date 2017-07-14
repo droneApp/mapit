@@ -3,8 +3,8 @@ import './team.css';
 class App extends Component {
 render() {
 return (
-<div>
-<h1>About Us</h1>
+<div className="full-page">
+<h1 className="team-title">About Us</h1>
 <section className="top-row">
 <h3>
 <img className='steen-about-pics' src='./our-pics/16797776_10158254923960300_8611520582224132040_o.jpg' />

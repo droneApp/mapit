@@ -10,15 +10,7 @@
     "massive": "^3.0.0",
     "node-bebop": "^0.6.0"
   },
-<<<<<<< HEAD
-
-  "name": "mapit",
-  "version": "1.0.0",
   "main": "server/server.js",
-
-=======
-  "main": "server.js",
->>>>>>> master
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
