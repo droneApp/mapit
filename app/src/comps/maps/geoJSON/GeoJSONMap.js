@@ -21,7 +21,9 @@ const Map = ReactMapboxGl({
             fill-color: '#088',
             fill-opacity: 0.8
         }}>
-        <GeoJSON
+
+        <GeoJSONLayer
+
             type = 'fill'
             source = {{
                 type: 'geojson',

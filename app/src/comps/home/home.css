@@ -120,6 +120,12 @@ div#dronediv {
     border: #5BCDF7 3px dotted;
 }
 
+
+
+
+
+
+
 @media only screen and (min-width: 500px) {
   h1.homeHeader {
     text-align: center;
@@ -127,22 +133,29 @@ div#dronediv {
     letter-spacing: 2px;
     font-size: 2em;
 }
-  .bannerContain {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      margin-top: 8vh;
-  }
 
-  .bannerPiece img {
-      max-width: 88%;
-      border-radius: 110px;
-  }
-  .homeHeadingContain h3 {
-    font-size: 2em;
-    margin-top: 30px;
+.bannerContain {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 8vh;
+  justify-content: space-around;
 }
+
+.bannerPiece {
+  width: 30%;
+}
+
+.bannerPiece img {
+  max-width: 88%;
+  border-radius: 110px;
+}
+.homeHeadingContain h3 {
+  font-size: 2em;
+  margin-top: 30px;
+}
+
 .homeHeadingContain {
     height: 153px;
 }
@@ -150,21 +163,21 @@ div#dronediv {
     line-height: 4em;
 }
 
-  .bannerPiece h2 {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    background: black;
-    margin: auto;
-    color: white;
-    width: 30%;
-    padding: 7px;
-    border-radius: 12px;
+.bannerPiece h2 {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  background: black;
+  margin: auto;
+  color: white;
+  width: 30%;
+  padding: 7px;
+  border-radius: 12px;
 }
 
 .homeHeadingContain {
 
-    margin-top: 92px;
+  margin-top: 92px;
 
 }
 
