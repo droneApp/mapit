@@ -5,6 +5,8 @@ import { Switch, HashRouter, Route} from 'react-router-dom';
 import Home from './comps/home/Home';
 import Team from './comps/team/Team';
 import Tech from './comps/tech/Tech';
+// import GeoJSONMap from './comps/maps/geoJSON/GeoJSONMap';
+
 
 class App extends Component {
   render() {
