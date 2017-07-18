@@ -4,22 +4,22 @@ import './drone.css'
 class Drone extends Component {
     render(){
         return(
-            <div>
-                <div className="diamond"><p className="diamondtext">&larr;</p></div>
-                <div className="diamond2"><p className="diamondtext">&larr;</p></div>
-                <div className="diamond3"><p className="diamondtext">&larr;</p></div>
-                <div className="diamond4"><p className="diamondtext">&larr;</p></div>
-                <div className="diamond5"><img className="counterclock" src={require("./assets/counterclock.png")} alt="Turn Left" /></div>
-                <div className="diamond6"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
-                <div className="diamond7"><img className="clock" src={require("./assets/clockwise.png")} alt="Turn Left" /></div>
-                <div className="diamond8"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
-                <div className="scope">+</div>
-                <div className="scopeout">-</div>
-                <div className="photo">Take Photo</div>
-                <div className="destination">Create Destination</div>
-                <div className="autopilot">Auto-Pilot to Destination</div>
-                <div className="depart">Take-Off</div>
-                <div className="land">Land</div>
+            <div className="manualController">
+                <div className="manualButton diamond"><p className="diamondtext">&larr;</p></div>
+                <div className="manualButton diamond2"><p className="diamondtext">&larr;</p></div>
+                <div className="manualButton diamond3"><p className="diamondtext">&larr;</p></div>
+                <div className="manualButton diamond4"><p className="diamondtext">&larr;</p></div>
+                <div className="manualButton diamond5"><img className="counterclock" src={require("./assets/counterclock.png")} alt="Turn Left" /></div>
+                <div className="manualButton diamond6"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
+                <div className="manualButton diamond7"><img className="clock" src={require("./assets/clockwise.png")} alt="Turn Left" /></div>
+                <div className="manualButton diamond8"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
+                <div className="manualButton scope">+</div>
+                <div className="manualButton scopeout">-</div>
+                <div className="manualButton photo">Take Photo</div>
+                <div className="manualButton destination">Create Destination</div>
+                <div className="manualButton autopilot">Auto-Pilot to Destination</div>
+                <div className="manualButton depart">Take-Off</div>
+                <div className="manualButton land">Land</div>
             </div>
         )
     }
