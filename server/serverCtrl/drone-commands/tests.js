@@ -50,7 +50,7 @@ module.exports = {
 
       setTimeout(function() {
         // try changing this number to change the speed
-        drone.left(4);
+        drone.left(20);
       }, 2000);
 
       // stops
@@ -85,7 +85,7 @@ module.exports = {
       drone.takeOff();
 
       setTimeout(function() {
-        drone.right(5);
+        drone.right(50);
       }, 3000);
 
       setTimeout(function() {
@@ -93,7 +93,52 @@ module.exports = {
       }, 4000);
 
       setTimeout(function() {
-        drone.left(5);
+        drone.left(50);
+      }, 5000);
+
+      setTimeout(function() {
+        drone.stop();
+      }, 6000);
+
+      setTimeout(function() {
+        drone.land();
+      }, 7000);
+    // end of connect
+    });
+  res.status(200).send("Fuckin neato.")
+
+},
+
+
+
+
+
+
+  biDirectional: function (req, res) {
+    console.log("Taking evasive action")
+    var drone = bebop.createClient();
+
+    drone.connect(function() {
+      drone.takeOff();
+
+      setTimeout(function() {
+        drone.right(20);
+      }, 3000);
+
+      setTimeout(function() {
+        drone.forward(50)
+      }, 3000);
+
+      setTimeout(function() {
+        drone.stop();
+      }, 4000);
+
+      setTimeout(function() {
+        drone.left(20);
+      }, 5000);
+
+      setTimeout(function() {
+        drone.backward(50)
       }, 5000);
 
       setTimeout(function() {
@@ -108,6 +153,11 @@ module.exports = {
   res.status(200).send("Fuckin neato.")
 
   }
+
+
+
+
+
 
 
 

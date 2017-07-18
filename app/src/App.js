@@ -5,10 +5,12 @@ import { Switch, HashRouter, Route} from 'react-router-dom';
 import Home from './comps/home/Home';
 import Team from './comps/team/Team';
 import Tech from './comps/tech/Tech';
+// import GeoJSONMap from './comps/maps/geoJSON/GeoJSONMap';
 import Drone from './comps/drone/Drone'
 
 // map prototype
 import GettingStartedExample from './comps/mapProto/MapProto';
+
 
 
 class App extends Component {

@@ -45,7 +45,8 @@ app.post('/launch-left-land', tests.launch_left_land)
 app.post('/evasive', tests.evasive)
 
 
-
+// testing bi directional control input
+app.post('/bi', tests.biDirectional)
 
 
 

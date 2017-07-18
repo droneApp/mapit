@@ -10,7 +10,7 @@
     "massive": "^3.0.0",
     "node-bebop": "^0.6.0"
   },
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
