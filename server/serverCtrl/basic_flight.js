@@ -1,11 +1,12 @@
-
+const bebop = require('node-bebop');
+const drone = bebop.createClient();
 
 
 module.exports = {
     takeOff: function(req, res) {
         drone.connect(function() {
             console.log('the drone connects and takes off')
-            drone.Piloting.takeOff().then(drone.stop());
+            drone.takeOff().then(drone.stop());
 
         }).then(resp => {
           res.status(200).send('took off')
@@ -20,7 +21,7 @@ module.exports = {
     land: function(req, res) {
 
         console.log('The drone lands')
-        drone.Piloting.land();
+        drone.land();
     },
 
 
@@ -29,7 +30,7 @@ module.exports = {
     flyUp: function(req, res) {
         console.log('the drone flys up by')
         console.log(req)
-        drone.up(val).then(drone.stop());
+        drone.up(50).then(drone.stop());
     },
 
 
@@ -38,7 +39,7 @@ module.exports = {
         console.log('the drone goes down by')
 
         console.log(req)
-        drone.down(val).then(drone.stop());
+        drone.down(50).then(drone.stop());
     },
 
 
@@ -49,7 +50,7 @@ module.exports = {
 
         console.log(req)
 
-        drone.right(val).then(drone.stop());
+        drone.right(50).then(drone.stop());
     },
 
 
@@ -57,7 +58,7 @@ module.exports = {
     flyLeft: function(req, res) {
         console.log('the drone goes left by:')
         console.log(req)
-        drone.left(val).then(drone.stop());
+        drone.left(50).then(drone.stop());
     },
 
 
@@ -66,7 +67,7 @@ module.exports = {
 
         console.log('the drone goes forward by:')
         console.log(req)
-        drone.forward(val).then(drone.stop());
+        drone.forward(50).then(drone.stop());
     },
 
 
@@ -74,7 +75,7 @@ module.exports = {
     flyBackward: function(req, res) {
         console.log('the drone goes back by:')
         console.log(req)
-        drone.backward(val).then(drone.stop());
+        drone.backward(50).then(drone.stop());
     },
 
 
@@ -83,7 +84,7 @@ module.exports = {
     flyClockwise: function(req, res) {
         console.log('the drone goes clockwise by:')
         console.log(req)
-        drone.clockwise(val).then(drone.stop());
+        drone.clockwise(50).then(drone.stop());
     },
 
 
@@ -91,7 +92,7 @@ module.exports = {
     flyCounterClockwise: function(req, res) {
       console.log('the drone goes counterClockwise by:')
       console.log(req)
-        drone.counterClockwise(val).then(drone.stop());
+        drone.counterClockwise(50).then(drone.stop());
     },
 
 
@@ -99,8 +100,11 @@ module.exports = {
     picture: function(req, res) {
         drone.takePicture();
     },
-    video: function(req, res) {
-
+    videoOn: function(req, res) {
+        drone.startRecording();
+    },
+    videoOff: function(req, res) {
+        drone.stopRecording();
     }
 
 }
