@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { Switch, HashRouter, Route} from 'react-router-dom';
-import Home from './comps/home/Home';
-import Team from './comps/team/Team';
-import Tech from './comps/tech/Tech';
+// import { Switch, HashRouter, Route} from 'react-router-dom';
+// import Home from './comps/home/Home';
+// import Team from './comps/team/Team';
+// import Tech from './comps/tech/Tech';
 import Drone from './comps/drone/Drone'
 
 class App extends Component {
@@ -12,13 +12,7 @@ class App extends Component {
     return (
 
       <div>
-        <HashRouter>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/team" component={Team}/>
-        <Route path="/tech" component={Tech}/>
-      </Switch>
-      </HashRouter>
+        <Drone />
       </div>
 
 
