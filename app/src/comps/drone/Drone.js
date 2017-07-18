@@ -1,7 +1,39 @@
 import React, { Component } from 'react';
 import './drone.css'
 
+
 class Drone extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      droneAction: ''
+    }
+
+
+
+
+// end of constructor
+  }
+
+
+  panLeft(){
+    console.log('pan left')
+  }
+  panBack(){
+    console.log('pan back')
+  }
+  panRight(){
+    console.log('pan back')
+  }
+  panForward(){
+    console.log('pan forward')
+  }
+
+
+
+
+
+
     render(){
         return(
             <div className="manualController">
