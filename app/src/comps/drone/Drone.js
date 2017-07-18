@@ -118,6 +118,7 @@ export default class Drone extends Component {
         return(
 
             <div className="manualController">
+
                 {/* pan movements */}
                 <div onClick={event => this.panLeft(event.target.id)} id="leftPan" className="manualButton diamond"><p className="diamondtext">&larr;</p></div>
                 <div onClick={event => this.panBack(event.target.id)} id="backPan" className="manualButton diamond2"><p className="diamondtext">&larr;</p></div>
@@ -137,7 +138,6 @@ export default class Drone extends Component {
                 <div onClick={event => this.launch(event.target.id)} className="manualButton depart">Take-Off</div>
                 <div onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
             </div>
-
 
 
         )

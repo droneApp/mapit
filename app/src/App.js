@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 import { Switch, HashRouter, Route} from 'react-router-dom';
-
 // STATIC IMPORTS
 import Home from './comps/home/Home';
 import Team from './comps/team/Team';
@@ -23,6 +21,7 @@ class App extends Component {
     return (
 
       <div>
+
         <HashRouter>
       <Switch>
         {/* STATIC ROUTES */}
