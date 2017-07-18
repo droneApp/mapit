@@ -7,6 +7,10 @@ import Team from './comps/team/Team';
 import Tech from './comps/tech/Tech';
 import Drone from './comps/drone/Drone'
 
+// map prototype
+import GettingStartedExample from './comps/mapProto/MapProto';
+
+
 class App extends Component {
   render() {
     return (
@@ -17,7 +21,10 @@ class App extends Component {
         <Route exact path="/" component={Home}/>
         <Route path="/team" component={Team}/>
         <Route path="/tech" component={Tech}/>
-        <Route path="/Map" component={Map}/>
+        <Route path="/Map" component={GettingStartedExample}/>
+
+
+
       </Switch>
       </HashRouter>
       </div>
