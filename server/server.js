@@ -71,6 +71,7 @@ app.post('/drone/g', controller.videoOff)
 
 
 
+
 const manualMotions = require('./serverCtrl/drone-commands/manualControl/movements.js')
 // manual stop
 app.post('/stop', manualMotions.stop)
