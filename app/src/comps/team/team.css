@@ -1,20 +1,23 @@
-h2{
+.team-title{
     display: flex;
     justify-content: center;
-	align-items: baseline;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-p{
+p h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
-img{
+.full-page {
     padding-bottom: 20px;
 }
 
 .steen-about-pics{
         width: 346px;
+        height:461px;
 }
 .about-pics {
     height:68vh;
@@ -24,11 +27,15 @@ img{
 .top-row{
     display: flex;
     justify-content: space-around;
-	align-items: center;
+    align-items: center;
+    margin-bottom: 70px;
 }
 
 .bottom-row{
     display: flex;
     justify-content: space-around;
-	align-items: center;
+    align-items: center;
+     padding-bottom: 70px;
 }
+
+ 

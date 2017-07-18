@@ -25,13 +25,13 @@ render(){
             <h4>Home</h4>
           </div>
           <div className="fmenuItem">
-            <h4>Team</h4>
+            <Link to="team"><h4>Team</h4></Link>
           </div>
 
-        </div>  
+        </div>
           <div className="footerMenuRow">
             <div className="fmenuItem">
-              <h4>Tech</h4>
+              <Link to="tech"><h4>Tech</h4></Link>
             </div>
             <div className="fmenuItem">
               <h4>Fly</h4>
@@ -54,6 +54,7 @@ render(){
         Copyright 2017 ©
       </h5>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF3pa__ETHwjTquKxziG5Ly4QHZ0f3jW0" />
 
     </footer>
 // end of render return

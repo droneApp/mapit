@@ -1,16 +1,18 @@
-.head{
+.techHeading {
     margin-top:20px;
     display: flex;
     justify-content: center;
     width:100%;
     margin-bottom:15px;
 }
-.h2{
+
+.h2 {
     display: flex;
     justify-content: center;
     width:100%;
 }
-img{
+
+#techDroneImg {
     width: 170px;
     height: 150px;
 }
@@ -22,13 +24,13 @@ img{
 .description{
     width:200px;
 }
-.tech{
+.techList{
     margin-left:35px;
 }
 li{
     margin-left: 50px;
 }
-.drone{
+.techDrone{
     display: flex;
     justify-content: center;
     width:100%;
