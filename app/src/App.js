@@ -31,7 +31,7 @@ class App extends Component {
 
 
         {/* FLY APP ROUTES */}
-        <Route path="/Map" component={Fly}/>
+        <Route path="/fly" component={Fly}/>
 
 
 

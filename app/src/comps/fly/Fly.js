@@ -13,7 +13,6 @@ import { Switch, HashRouter, Route} from 'react-router-dom';
 import Drone from '../drone/Drone'
 
 
-
 export default class Fly extends Component {
   render() {
     return (
