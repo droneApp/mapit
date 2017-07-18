@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import { Switch, HashRouter, Route} from 'react-router-dom';
 
@@ -16,12 +17,12 @@ import Fly from './comps/fly/Fly';
 // map prototype
 import GettingStartedExample from './comps/mapProto/MapProto';
 
-
+injectTapEventPlugin();
 
 class App extends Component {
   render() {
     return (
-
+      <MuiThemeProvider>
       <div>
         <HashRouter>
       <Switch>
@@ -32,15 +33,15 @@ class App extends Component {
 
 
         {/* FLY APP ROUTES */}
-        <Route path="/Map" component={Fly}/>
-
+        <Route path="/fly" component={Fly}/>
+       
 
 
 
       </Switch>
       </HashRouter>
       </div>
-
+      </MuiThemeProvider>
 
 
 

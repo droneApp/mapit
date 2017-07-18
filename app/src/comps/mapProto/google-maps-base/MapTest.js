@@ -36,11 +36,11 @@ import Helmet from "react-helmet";
 
 export default class MapTest extends Component {
 
-  static propTypes = {
-    children: PropTypes.element.isRequired,
-  };
+  // static propTypes = {
+  //   children: PropTypes.element.isRequired,
+  // };
 
-  handleToast = this.handleToast.bind(this);
+  // handleToast = this.handleToast.bind(this);
 
   handleToast(title, message) {
     this.refs.toast.success(title, message);

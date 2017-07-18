@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import './tech.css'
+import Header from '../header/Header'
+import Footer from '../footer/Footer'
 
 class Tech extends Component {
     render() {
         return (
+
+            <main>
+                <Header />
+
             <div>
                 <div className="techHeading">Tech</div>
                 <div className="techHeading">Drone: Parrot Bebop 2</div>
@@ -19,6 +25,9 @@ class Tech extends Component {
 
 
             </div>
+
+            <Footer />
+            </main>
         )
     }
 }
