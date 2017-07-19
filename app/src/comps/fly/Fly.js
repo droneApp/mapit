@@ -21,7 +21,7 @@ import Footer from '../footer/Footer';
 
 
 
-}
+
 
 const TabsExampleSimple = () => (
 
