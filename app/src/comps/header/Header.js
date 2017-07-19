@@ -56,12 +56,12 @@ render(){
 
           <div className="menuItem">
             {this.props.children}
-            <Link to="tech"><h4>Tech</h4></Link>
+            <Link to="Tech"><h4>Tech</h4></Link>
           </div>
 
           <div className="menuItem">
           {this.props.children}
-            <h4>Fly</h4>
+            <Link to="Map"><h4>Fly</h4></Link>
           </div>
 
 

@@ -50,7 +50,7 @@ h1.homeHeader {
 
 .homeHeadingContain {
     text-align: center;
-    background: rgba(91, 205, 247, 0.3);
+    background: var(--extra-color);
     margin-top: 16%;
     height: 102px;
     line-height: 2.2em;
@@ -105,19 +105,21 @@ div#dronediv {
     background-color: rgba(0, 0, 0, 0.78);
     color: white;
     font-size: 1.5em;
-    width: 175px;
+    width: 185px;
     font-weight: 600;
     cursor: pointer;
 }
-#takeFlight a{
-    text-decoration: none;
-    color: white;
-}
+ #takeFlight a{
+     text-decoration: none; 
+     color: white; 
+} 
 
 #takeFlight:hover {
     background: rgba(255, 255, 255, 0.76);
+    border: var(--primary-bg-color) 3px dotted;
+}
+#takeFlight a:hover{
     color: black;
-    border: #5BCDF7 3px dotted;
 }
 
 
