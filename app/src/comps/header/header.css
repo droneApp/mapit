@@ -20,6 +20,7 @@ header {
 
 
 .menuItem {
+    height:100%;
     transition: .3s;
     display: flex;
     align-items: center;
@@ -28,18 +29,20 @@ header {
     justify-content: center;
 }
 
-.menuItem:hover {
+.menuItem h4:hover {
     transition: .3s;
     letter-spacing: 4px;
-    background: #03A9F4;
+    background: var(--primary-bg-color);
     color: white;
 }
 
 .menuItem h4 {
     font-size: 1.3em;
-    height: 100%;
-    align-items: center;
+    height: 60px;
+    width:120%;
+    align-items: center; 
     display: flex;
+    justify-content: center;
 }
 
 .menuItem a{
