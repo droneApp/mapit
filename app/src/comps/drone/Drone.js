@@ -141,7 +141,6 @@ export default class Drone extends Component {
             </div>
 
 
-
         )
     }
 }

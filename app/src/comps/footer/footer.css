@@ -37,10 +37,9 @@ footer {
     text-align: center;
 }
 
-.fmenuItem:hover {
+.fmenuItem h4:hover {
     transition: .3s;
-
-    background: #03A9F4;
+    background: var(--primary-bg-color);
     color: white;
 }
 
@@ -58,9 +57,10 @@ footer {
 
 .rLinks a {
     text-decoration: none;
+    color: black;
 }
 .rLinks a:hover {
-    color: #03A9F4;
+    color: var(--primary-bg-color);
 }
 
 
