@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import './team.css';
+
+
+// import header footer
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
+
+
+
+
 class App extends Component {
 render() {
 return (
@@ -9,6 +16,7 @@ return (
 <Header />
 
 <div className="full-page">
+    
 <h1 className="team-title">About Us</h1>
 <section className="top-row">
 <h3>
@@ -30,6 +38,7 @@ Jacob
 Sean
 <p>Area where we can write about ourselves</p></h3>
 </section>
+
 </div>
 
 <Footer/>
