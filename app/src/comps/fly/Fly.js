@@ -3,11 +3,12 @@ import './fly.css';
 import {Link} from 'react-router-dom'
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
+
 // import header footer
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
-// import Tab from './Tab'
-// import Tab2 from './Tab2'
+
+
 
 
 
@@ -26,10 +27,13 @@ function handleActive(tab) {
 }
 
 const TabsExampleSimple = () => (
+  
+  <div>
+  <Header />
   <Tabs>
-    <Tab label="Item One" >
+    <Tab label="Fly" >
       <div>
-        <h2 style={styles.headline}>Tab One</h2>
+        <h2 style={styles.headline}>Fly</h2>
         <p>
           This is an example tab.
         </p>
@@ -39,36 +43,36 @@ const TabsExampleSimple = () => (
         <Slider name="slider0" defaultValue={0.5} />
       </div>
     </Tab>
-    <Tab label="Item Two" >
+    <Tab label="Map 1" >
       <div>
-        <h2 style={styles.headline}>Tab Two</h2>
+        <h2 style={styles.headline}>Map1</h2>
         <p>
           This is another example tab.
         </p>
       </div>
     </Tab>
     <Tab
-      label="onActive"
+      label="Map 2"
       data-route="/home"
 
     >
       <div>
-        <h2 style={styles.headline}>Tab Three</h2>
+        <h2 style={styles.headline}>Map2</h2>
         <p>
           This is a third example tab.
         </p>
       </div>
     </Tab>
   </Tabs>
-);
 
+  <Footer />
+  </div>
+)
 export default TabsExampleSimple;
 
 
 // import { Switch, HashRouter, Route} from 'react-router-dom';
 
-// // import GeoJSONMap from './comps/maps/geoJSON/GeoJSONMap';
-// import Drone from '../drone/Drone'
 
 
 
