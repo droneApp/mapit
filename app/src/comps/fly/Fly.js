@@ -15,7 +15,18 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 
 
+const styles = {
+  headline: {
+    fontSize: 24,
+    paddingTop: 16,
+    marginBottom: 12,
+    fontWeight: 400,
+  },
+};
 
+function handleActive(tab) {
+
+}
 
 
 
