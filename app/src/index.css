@@ -52,4 +52,11 @@ img {
 
 html,body{overflow-x: hidden;}
 
+:root {
+	--primary-bg-color: #5BCDF7;
+	--secondary-bg-color: #591700;
+	--tertiary-bg-color: #D6F484;
+	--extra-color: rgba(91,205,247,0.3);
+}
+
 
