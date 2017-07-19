@@ -22,7 +22,7 @@ render(){
         <div className="footerMenuRow">
 
           <div className="fmenuItem">
-            <h4>Home</h4>
+            <Link to="/"><h4>Home</h4></Link>
           </div>
           <div className="fmenuItem">
             <Link to="team"><h4>Team</h4></Link>
