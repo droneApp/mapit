@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';  
+
 
 import { Switch, HashRouter, Route} from 'react-router-dom';
 // STATIC IMPORTS
@@ -23,7 +25,10 @@ class App extends Component {
     return (
       <MuiThemeProvider>
       <div>
+
         {/* <Tech /> */}
+
+
           <HashRouter>
       <Switch>  
         {/* STATIC ROUTES */}

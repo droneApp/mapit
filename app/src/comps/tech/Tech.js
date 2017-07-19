@@ -9,8 +9,12 @@ import Footer from '../footer/Footer'
 class Tech extends Component {
     render() {
         return (
+
+            <main>
+                <Header />
+
             <div>
-                <Header/>
+                
                 <div className="techHeading">Tech</div>
                 <div className="h2">Drone: Parrot Bebop 2</div>
                 <div className="techDrone"><img src={require('./assets/bebop.png')} id="techDroneImg" alt="Drone" /></div>
@@ -24,8 +28,11 @@ class Tech extends Component {
                     <li>Node Package : node-bebop</li>
 
                 
-                 <Footer/>
+                 
             </div>
+
+            <Footer />
+            </main>
         )
     }
 }
