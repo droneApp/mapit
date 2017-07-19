@@ -1,45 +1,30 @@
 import React, { Component } from 'react';
 import './fly.css';
-<<<<<<< HEAD
-import '../drone/drone.css'
-=======
+
 import {Link} from 'react-router-dom'
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 
->>>>>>> master
+
+import Drone from '../drone/Drone';
+
+
+
 // import header footer
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 
 
 
 
 
-<<<<<<< HEAD
-export default class Fly extends Component {
-  render() {
-    return (
-      <main>
-      <Header />
-=======
-const styles = {
-  headline: {
-    fontSize: 24,
-    paddingTop: 16,
-    marginBottom: 12,
-    fontWeight: 400,
-  },
-};
 
-function handleActive(tab) {
->>>>>>> master
 
 }
 
 const TabsExampleSimple = () => (
-  
+
   <div>
   <Header />
   <Tabs>
@@ -52,7 +37,9 @@ const TabsExampleSimple = () => (
         <p>
           You can put any sort of HTML or react component in here. It even keeps the component state!
         </p>
-        <Slider name="slider0" defaultValue={0.5} />
+
+        <Drone/>
+
       </div>
     </Tab>
     <Tab label="Map 1" >
@@ -98,15 +85,15 @@ export default TabsExampleSimple;
 //     return (
 //       <main>
 //       <Header />
-       
+
 
 
 
 //       <div className="controllerContain">
-         
+
 //          <Link to="Tab"><h4>Tab</h4></Link>
 //          <Link to="Tab2"><h4>Tab2</h4></Link>
-        
+
 //         <Drone/>
 
 
