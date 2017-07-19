@@ -14,7 +14,7 @@ class Tech extends Component {
                 <Header />
 
             <div>
-                
+
                 <div className="techHeading">Tech</div>
                 <div className="h2">Drone: Parrot Bebop 2</div>
                 <div className="techDrone"><img src={require('./assets/bebop.png')} id="techDroneImg" alt="Drone" /></div>
@@ -27,8 +27,8 @@ class Tech extends Component {
                     <li>CSS</li>
                     <li>Node Package : node-bebop</li>
 
-                
-                 
+
+
             </div>
 
             <Footer />
