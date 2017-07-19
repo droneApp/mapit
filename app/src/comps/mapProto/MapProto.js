@@ -1,4 +1,4 @@
-/* global google */
+// /* global google */
 // import _ from "lodash";
 // import Footer from '../footer/Footer'
 

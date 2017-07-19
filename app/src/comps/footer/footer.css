@@ -3,6 +3,8 @@ footer {
     display: flex;
     flex-direction: column;
     border-top: #03A9F4 solid 2px;
+
+
 }
 
 .footerRow {

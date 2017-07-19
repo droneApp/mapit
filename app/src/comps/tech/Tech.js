@@ -6,6 +6,10 @@ import Footer from '../footer/Footer'
 class Tech extends Component {
     render() {
         return (
+
+            <main>
+               
+
             <div>
                 <Header />
                 <div className="techHeading">Tech</div>
@@ -21,9 +25,12 @@ class Tech extends Component {
                     <li>- Node Package : node-bebop</li>
 
                 
-                <Footer />
+                
             </div>
-            
+
+
+            <Footer />
+            </main>
         )
     }
 }
