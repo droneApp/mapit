@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './drone.css'
-import keycode from 'keycode';
+import keys from './Keycode.js';
 
 
 
@@ -10,8 +10,10 @@ class Drone extends Component {
     this.state = {
       droneAction: ''
     },
-    this.handlePress = this.handlePress.bind(this);
-    this.handleRelease = this.handleRelease.bind(this);
+    this._changeStatus = this._changeStatus.bind(this);
+    this._onKeydown = this._onKeydown.bind(this);
+    this._onKeyup = this._onKeyup.bind(this);
+    this._onKeypress = this._onKeypress.bind(this)
 
 
 
@@ -19,13 +21,15 @@ class Drone extends Component {
 // end of constructor
   }
 componentDidMount() {
-  window.addEventListener('keydown', this.handlePress);
-  window.addEventListener('keyup', this.handleRelease);
+  window.addEventListener('keydown', this._onKeydown);
+  window.addEventListener('keyup', this._onKeyup);
+  window.addEventListener('keypress', this._onKeypress);
 }
 
 componentWillUnmount() {
-  window.removeEventListener('keydown', this.handlePress);
-  window.removeEventListener('keyup', this.handleRelease);
+  window.removeEventListener('keydown', this._onKeydown);
+  window.removeEventListener('keyup', this._onKeyup);
+  window.removeEventListener('keypress', this._onKeypress);
 }
 
   panLeft(){
