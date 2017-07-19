@@ -26,27 +26,25 @@ class App extends Component {
     return (
 
       <div>
-
-        <HashRouter>
-      <Switch>
+        <Tech />
+        {/* <HashRouter>
+      <Switch> */}
         {/* STATIC ROUTES */}
-        <Route exact path="/" component={Home}/>
+        {/* <Route exact path="/" component={Home}/>
         <Route path="/team" component={Team}/>
-        <Route path="/tech" component={Tech}/>
+        <Route path="/tech" component={Tech}/> */}
 
 
         {/* FLY APP ROUTES */}
-        <Route path="/fly" component={Fly}/>
 
-
-        <Route path="/map" component={Map}/>
+        {/* <Route path="/Map" component={Fly}/> */}
 
 
 
 
 
-      </Switch>
-      </HashRouter>
+      {/* </Switch>
+      </HashRouter> */}
       </div>
 
 
