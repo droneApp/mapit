@@ -49,6 +49,7 @@
     "express-session": "^1.15.3",
     "google-maps-infobox": "^1.1.13",
     "invariant": "^2.2.1",
+    "keycode": "^2.1.9",
     "lodash": "^4.16.2",
     "mapbox-gl": "^0.38.0",
     "marker-clusterer-plus": "^2.1.4",

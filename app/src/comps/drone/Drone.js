@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './drone.css'
+import keycode from 'keycode';
+
 
 
 class Drone extends Component {
@@ -7,14 +9,24 @@ class Drone extends Component {
     super(props)
     this.state = {
       droneAction: ''
-    }
+    },
+    this.handlePress = this.handlePress.bind(this);
+    this.handleRelease = this.handleRelease.bind(this);
 
 
 
 
 // end of constructor
   }
+componentDidMount() {
+  window.addEventListener('keydown', this.handlePress);
+  window.addEventListener('keyup', this.handleRelease);
+}
 
+componentWillUnmount() {
+  window.removeEventListener('keydown', this.handlePress);
+  window.removeEventListener('keyup', this.handleRelease);
+}
 
   panLeft(){
     console.log('pan left')
