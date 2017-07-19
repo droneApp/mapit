@@ -4,12 +4,14 @@
     justify-content: center;
     width:100%;
     margin-bottom:15px;
+    font-size:45px;
 }
 
 .h2 {
     display: flex;
     justify-content: center;
     width:100%;
+    font-size: 20px;
 }
 
 #techDroneImg {
@@ -25,10 +27,13 @@
     width:200px;
 }
 .techList{
-    margin-left:35px;
+    margin-top: 10px;
+    margin-left:10vw;
+    margin-bottom:10px;
 }
 li{
-    margin-left: 50px;
+    margin-top:5px;
+    margin-left: 10vw;
 }
 .techDrone{
     display: flex;
