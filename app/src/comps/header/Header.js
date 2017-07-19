@@ -26,73 +26,75 @@ export default class Header extends Component{
 
 
 render(){
-  return (
+  return(
+    <div></div>
+//   return (
 
-    <header>
-      <div className="menu">
-        <nav>
-          <div className="menuItem">
-            {this.props.children}
-            <Link to="/"><h4>Home</h4></Link>
-          </div>
+//     <header>
+//       <div className="menu">
+//         <nav>
+//           <div className="menuItem">
+//             {this.props.children}
+//             <Link to="/"><h4>Home</h4></Link>
+//           </div>
 
-          <div className="menuItem">
-              {this.props.children}
-            <Link to="team"><h4>Team</h4></Link>
+//           <div className="menuItem">
+//               {this.props.children}
+//             <Link to="team"><h4>Team</h4></Link>
 
             
-          </div>
+//           </div>
 
 
 
 
-          <div className="logoContain">
-            <div className="logo">
-            {this.props.children}
-              <h4>[logo]</h4>
-            </div>
-          </div>
+//           <div className="logoContain">
+//             <div className="logo">
+//             {this.props.children}
+//               <h4>[logo]</h4>
+//             </div>
+//           </div>
 
 
 
-          <div className="menuItem">
-            {this.props.children}
-            <Link to="tech"><h4>Tech</h4></Link>
-          </div>
+//           <div className="menuItem">
+//             {this.props.children}
+//             <Link to="tech"><h4>Tech</h4></Link>
+//           </div>
 
-          <div className="menuItem">
-          {this.props.children}
-          <Link to = "fly"><h4>Fly</h4></Link>
-          </div>
-
-
-
-
-        </nav>
-      </div>
-
-<div className="mobileBar">
-      <div className="mobileLogo">
-        <p>[logo]</p>
-      </div>
+//           <div className="menuItem">
+//           {this.props.children}
+//           <Link to = "fly"><h4>Fly</h4></Link>
+//           </div>
 
 
 
 
-      <div className="toggleMenu">
-        <div className="bars">
-          <div className="bar bar1"></div>
-          <div className="bar bar2"></div>
-          <div className="bar bar3"></div>
-        </div>
-      </div>
-</div>
+//         </nav>
+//       </div>
+
+// <div className="mobileBar">
+//       <div className="mobileLogo">
+//         <p>[logo]</p>
+//       </div>
+
+
+
+
+//       <div className="toggleMenu">
+//         <div className="bars">
+//           <div className="bar bar1"></div>
+//           <div className="bar bar2"></div>
+//           <div className="bar bar3"></div>
+//         </div>
+//       </div>
+// </div>
 
 
 
 
 
-      {/* <div className="mobileMenu">
+      /* <div className="mobileMenu">
 
 
 
@@ -109,18 +111,18 @@ render(){
           <a><p>FLY</p></a>
         </div>
 
-      </div> */}
+      </div> */
 
 
 
 
-    </header>
+    // </header>
 
 
 
   // end or return
-  )
-
+  
+)
 // end of home
 }
 // end of render
