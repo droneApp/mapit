@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './fly.css';
-
+import '../drone/drone.css'
 // import header footer
 import Header from '../header/Header'
 import Footer from '../footer/Footer'

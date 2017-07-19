@@ -121,16 +121,16 @@ export default class Drone extends Component {
 
 
                 {/* pan movements */}
-                <div onClick={event => this.panLeft(event.target.id)} id="leftPan" className="manualButton diamond"><p className="diamondtext">&larr;</p></div>
-                <div onClick={event => this.panBack(event.target.id)} id="backPan" className="manualButton diamond2"><p className="diamondtext">&larr;</p></div>
-                <div onClick={event => this.panRight(event.target.id)} id="rightPan" className="manualButton diamond3"><p className="diamondtext">&larr;</p></div>
-                <div onClick={event => this.panForward(event.target.id)} id="forwardPan" className="manualButton diamond4"><p className="diamondtext">&larr;</p></div>
+                <div onClick={event => this.panLeft(event.target.id)} id="leftPan" className="manualButton pad1left"><p className="diamondtext">&larr;</p></div>
+                <div onClick={event => this.panBack(event.target.id)} id="backPan" className="manualButton pad1down"><p className="diamondtext">&larr;</p></div>
+                <div onClick={event => this.panRight(event.target.id)} id="rightPan" className="manualButton pad1right"><p className="diamondtext">&larr;</p></div>
+                <div onClick={event => this.panForward(event.target.id)} id="forwardPan" className="manualButton pad1up"><p className="diamondtext">&larr;</p></div>
 
                 {/* Altitude and rotation movements */}
-                <div onClick={event => this.rotateLeft(event.target.id)} className="manualButton diamond5"><img className="counterclock" src={require("./assets/counterclock.png")} alt="Turn Left" /></div>
-                <div onClick={event => this.down(event.target.id)} className="manualButton diamond6"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
-                <div onClick={event => this.rotateRight(event.target.id)} className="manualButton diamond7"><img className="clock" src={require("./assets/clockwise.png")} alt="Turn right" /></div>
-                <div onClick={event => this.up(event.target.id)} className="manualButton diamond8"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
+                <div onClick={event => this.rotateLeft(event.target.id)} className="manualButton pad2left"><img className="counterclock" src={require("./assets/counterclock.png")} alt="Turn Left" /></div>
+                <div onClick={event => this.down(event.target.id)} className="manualButton pad2down"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
+                <div onClick={event => this.rotateRight(event.target.id)} className="manualButton pad2right"><img className="clock" src={require("./assets/clockwise.png")} alt="Turn right" /></div>
+                <div onClick={event => this.up(event.target.id)} className="manualButton pad2up"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
                 <div className="manualButton scope">+</div>
                 <div className="manualButton scopeout">-</div>
                 <div className="manualButton photo">Take Photo</div>

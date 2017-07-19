@@ -11,8 +11,13 @@ import Tech from './comps/tech/Tech';
 // import GeoJSONMap from './comps/maps/geoJSON/GeoJSONMap';
 import Drone from './comps/drone/Drone';
 import Fly from './comps/fly/Fly';
-// map prototype
-import GettingStartedExample from './comps/mapProto/MapProto';
+
+import Map from './comps/newMap/Map'
+
+
+
+
+
 
 
 
@@ -32,6 +37,10 @@ class App extends Component {
 
         {/* FLY APP ROUTES */}
         <Route path="/fly" component={Fly}/>
+
+
+        <Route path="/map" component={Map}/>
+
 
 
 
