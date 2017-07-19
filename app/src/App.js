@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import { Switch, HashRouter, Route} from 'react-router-dom';
 // STATIC IMPORTS
@@ -19,23 +21,24 @@ import Map from './comps/newMap/Map'
 
 
 
-
+injectTapEventPlugin();
 
 class App extends Component {
   render() {
     return (
-
+      <MuiThemeProvider>
       <div>
         <Tech />
-        {/* <HashRouter>
-      <Switch> */}
+          <HashRouter>
+      <Switch>  
         {/* STATIC ROUTES */}
-        {/* <Route exact path="/" component={Home}/>
+         <Route exact path="/" component={Home}/>
         <Route path="/team" component={Team}/>
-        <Route path="/tech" component={Tech}/> */}
+        <Route path="/tech" component={Tech}/> 
 
 
         {/* FLY APP ROUTES */}
+<<<<<<< HEAD
 
         {/* <Route path="/Map" component={Fly}/> */}
 
@@ -45,8 +48,17 @@ class App extends Component {
 
       {/* </Switch>
       </HashRouter> */}
-      </div>
+=======
+        <Route path="/fly" component={Fly}/>
+       
 
+
+
+       </Switch>
+      </HashRouter> 
+>>>>>>> master
+      </div>
+      </MuiThemeProvider>
 
 
 
