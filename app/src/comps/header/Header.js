@@ -65,7 +65,7 @@ render(){
           <div className="menuItem">
           {this.props.children}
 
-            <Link to = "fly"><h4>Fly</h4></Link>
+            <Link to="fly"><h4>Fly</h4></Link>
 
           </div>
 
