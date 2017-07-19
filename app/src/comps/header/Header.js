@@ -32,7 +32,7 @@ render(){
       <div className="menu">
         <nav>
           <div className="menuItem">
-            <h4>Home</h4>
+          <Link to="/"><h4>Home</h4></Link>
           </div>
 
           <div className="menuItem">
@@ -61,7 +61,7 @@ render(){
 
           <div className="menuItem">
           {this.props.children}
-            <h4>Fly</h4>
+            <Link to = "fly"><h4>Fly</h4></Link>
           </div>
 
 
