@@ -18,7 +18,7 @@ return (
 Steen
 <p>Area where we can write about ourselves</p></h3>
 <h3>
-<img className='about-pics' src='./our-pics/IMG_2076.jpg' alt="hello" />
+<img className='about-pics' src='./our-pics/FullSizeRender.jpg' alt="hello" />
 Dallin
 <p>Area where we can write about ourselves</p></h3>
 </section>
