@@ -11,7 +11,7 @@ class Tech extends Component {
         return (
 
             <main>
-               
+               <Header />
 
             <div>
                 
