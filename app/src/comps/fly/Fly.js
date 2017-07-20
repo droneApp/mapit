@@ -38,10 +38,10 @@ const TabsExampleSimple = () => (
       <div>
         <h2 style={styles.headline}>Fly</h2>
         <p>
-          This is an example tab.
+          {/* This is an example tab. */}
         </p>
         <p>
-          You can put any sort of HTML or react component in here. It even keeps the component state!
+          {/* You can put any sort of HTML or react component in here. It even keeps the component state! */}
         </p>
 
         <Drone/>
