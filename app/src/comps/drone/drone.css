@@ -169,12 +169,14 @@ div{
     font-size: 22px;
     padding-top:80px;
     padding-right:36px; 
+    color:white;
 }
 .uparrow{
     position: absolute; 
     transform: rotate(-45deg);  
     font-size: 22px;
     padding-left: 2px;
+    color: white;
     
 }
 .down{
@@ -182,7 +184,8 @@ div{
     transform: rotate(135deg);  
     font-size: 17px;
     padding-left:40px;
-    padding-top: 17px
+    padding-top: 17px;
+    color:white;
 }
 .up{
     transform: rotate(-45deg);  
@@ -191,6 +194,7 @@ div{
     width:50px;
     height:30px;
     padding-top: 19px;
+    color:white;
 }
 .diamondtext{
     transform: rotate(45deg);  
@@ -198,6 +202,7 @@ div{
     text-align: center;
     padding-left: 5px;
     padding-top: 7px;
+    color:white;
 }
 .pad1left {
     user-select: none;
@@ -206,7 +211,7 @@ div{
     left: 0px;
     width: 50px;
     height: 50px;
-    background: var(--primary-bg-color);
+    background: var(--secondary-bg-color);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -227,7 +232,7 @@ div{
     left: 40px;
     width: 50px;
     height: 50px;
-    background: var(--primary-bg-color);
+    background: var(--secondary-bg-color);
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
@@ -247,7 +252,7 @@ div{
     left: 80px;
     width: 50px;
     height: 50px;
-    background: var(--primary-bg-color);
+    background: var(--secondary-bg-color);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -267,7 +272,7 @@ div{
     left: 40px;
     width: 50px;
     height: 50px;
-    background: var(--primary-bg-color);
+    background: var(--secondary-bg-color);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
