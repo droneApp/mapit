@@ -15,10 +15,15 @@
     width:100%;
     font-size: 20px;
 }
+svg{
+    height:33vh;
+    width:100px
+}
 
 #techDroneImg {
-    width: 170px;
-    height: 150px;
+    margin-top: -96px;
+    z-index: -9000;
+    height: 445px;
 }
 .scriptbox{
     display: flex;
@@ -29,19 +34,27 @@
     width:400px;
 }
 .techList{
-    margin-top: 15px;
-    margin-left:10vw;
-    margin-bottom:15px;
-    font-size:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     font-size:30px; 
+     padding-bottom: 51px;
+    
     
 }
-li{
-    list-style-type:none;
-    margin-top:5px;
-    margin-left: 10vw;
+.tech-icons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 111px;
 }
+
+ li{ 
+    list-style-type:none; 
+} 
 .techDrone{
     display: flex;
     justify-content: center;
     width:100%;
+    margin-bottom: -166px;
 }
