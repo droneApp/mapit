@@ -27,10 +27,16 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
     secret: config.secret
+
 }));
 
 app.use(express.static('./src'));
-
+//enable cross origin requests
+app.use(function(req, res, next){
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+})
 
 
 // postman test endpoints
@@ -49,24 +55,42 @@ app.post('/evasive', tests.evasive)
 app.post('/bi', tests.biDirectional)
 
 //endpoints for manual controller
-app.post('/drone/space', controller.takeOff)
-app.post('/drone/shift', controller.land)
-app.post('/drone/w', controller.flyUp)
-app.post('/drone/s', controller.flyDown)
-app.post('/drone/a', controller.flyLeft)
-app.post('/drone/d', controller.flyRight)
-app.post('/drone/i', controller.flyForward)
-app.post('/drone/k', controller.flyBackwards)
-app.post('/drone/j', controller.flyCounterClockwise)
-app.post('/drone/l', controller.flyClockwise)
-app.post('/drone/f', controller.picture)
-app.post('/drone/h', controller.videoOn)
-app.post('/drone/g', controller.videoOff)
+// app.post('/drone/space', controller.takeOff)
+// app.post('/drone/shift', controller.land)
+// app.post('/drone/w', controller.flyUp)
+// app.post('/drone/s', controller.flyDown)
+// app.post('/drone/a', controller.flyLeft)
+// app.post('/drone/d', controller.flyRight)
+// app.post('/drone/i', controller.flyForward)
+// app.post('/drone/k', controller.flyBackwards)
+// app.post('/drone/j', controller.flyCounterClockwise)
+// app.post('/drone/l', controller.flyClockwise)
+// app.post('/drone/f', controller.picture)
+// app.post('/drone/h', controller.videoOn)
+// app.post('/drone/g', controller.videoOff)
 
 
 
 
+const manualMotions = require('./serverCtrl/drone-commands/manualControl/movements.js')
+// manual stop
+app.post('/stop', manualMotions.stop)
 
+
+// manual control launch, pan, and land movements
+app.post('/connect', manualMotions.connect)
+app.post('/launch', manualMotions.launch)
+app.post('/pan-left', manualMotions.pan_left)
+app.post('/pan-back', manualMotions.pan_back)
+app.post('/pan-right', manualMotions.pan_right)
+app.post('/pan-forward', manualMotions.pan_forward)
+app.post('/land', manualMotions.land)
+
+// up down and rotate commands
+app.post('/up', manualMotions.up)
+app.post('/down', manualMotions.down)
+app.post('/rotate-right', manualMotions.rotate_right)
+app.post('/rotate-left', manualMotions.rotate_left)
 
 
 

@@ -50,18 +50,15 @@ module.exports = {
 
       setTimeout(function() {
         // try changing this number to change the speed
-        drone.left(20);
-      }, 2000);
-
-      // stops
-      setTimeout(function() {
-        drone.stop();
+        Piloting.flatTrim()
       }, 4000);
+
+
 
       // lands the drone after 5 seconds
       setTimeout(function() {
         drone.land();
-      }, 5000);
+      }, 8000);
 
     // end of connect
     });

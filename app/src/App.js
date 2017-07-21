@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';  
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 
 import { Switch, HashRouter, Route} from 'react-router-dom';
@@ -15,8 +15,13 @@ import Tech from './comps/tech/Tech';
 // import GeoJSONMap from './comps/maps/geoJSON/GeoJSONMap';
 import Drone from './comps/drone/Drone';
 import Fly from './comps/fly/Fly';
-// map prototype
-import GettingStartedExample from './comps/mapProto/MapProto';
+
+import Map from './comps/newMap/Map'
+
+
+
+
+
 
 injectTapEventPlugin();
 
@@ -30,21 +35,24 @@ class App extends Component {
 
 
           <HashRouter>
-      <Switch>  
+      <Switch>
         {/* STATIC ROUTES */}
          <Route exact path="/" component={Home}/>
         <Route path="/team" component={Team}/>
-        <Route path="/tech" component={Tech}/> 
+        <Route path="/tech" component={Tech}/>
 
 
         {/* FLY APP ROUTES */}
+
         <Route path="/fly" component={Fly}/>
-       
+        <Route path="/fly" component={Map}/>
+
 
 
 
        </Switch>
-      </HashRouter> 
+      </HashRouter>
+
       </div>
       </MuiThemeProvider>
 
