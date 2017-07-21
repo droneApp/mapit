@@ -13,7 +13,7 @@ class Drone extends Component {
     this._changeStatus = this._changeStatus.bind(this);
     this._onKeydown = this._onKeydown.bind(this);
     this._onKeyup = this._onKeyup.bind(this);
-    this._onKeypress = this._onKeypress.bind(this)
+    this._onKeypress = this._onKeypress.bind(this);
 
 
 
