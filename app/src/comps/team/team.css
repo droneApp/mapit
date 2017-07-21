@@ -1,26 +1,117 @@
+.team-background{
+    position: absolute;
+     background-color: var(--secondary-bg-color);
+     height: 175.5vh;
+     width: 100%;
+     opacity: 0.9;
+     z-index: -1;
+}
+
 .team-title{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
-p h3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+.team-title h1{
+    padding-top:15px; 
 }
+.middle {
+    transition: .5s ease;
+  opacity: 0;
+   position: relative; 
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.middle {
+    transition: .5s ease;
+  opacity: 0;
+   position: relative; 
+   bottom: 50%; 
+   left: 50%; 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.steen{
+     width: 346px;
+        height:461px;
+}
+    .dallin{
+        width: 345px;
+        height: 459px;
+    }
+    .sean{
+width: 345px;
+        height: 459px;
+    }
+    .jacob{
+width: 345px;
+        height: 459px;
+    }
+.our-text{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.steen:hover .steen-about-pics {
+ display: block;
+ opacity: 0.3;
+
+    
+}
+.steen:hover .middle{
+    opacity: 1;
+}
+
+.dallin:hover .about-pics {
+ display: block;
+ opacity: 0.3;
+
+    
+}
+.dallin:hover .middle{
+    opacity: 1;
+}
+
+.jacob:hover .about-pics {
+ display: block;
+ opacity: 0.3;
+
+    
+}
+.jacob:hover .middle{
+    opacity: 1;
+}
+.sean:hover .about-pics {
+ display: block;
+ opacity: 0.3;
+
+    
+}
+.sean:hover .middle{
+    opacity: 1;
+}
+
 .full-page {
-    padding-bottom: 20px;
+    color: whitesmoke
 }
 
 .steen-about-pics{
         width: 346px;
         height:461px;
+        transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  display: block;
 }
 .about-pics {
     height:68vh;
+    
+    
     
 }
 
@@ -29,6 +120,7 @@ p h3{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 70px;
+    z-index: 9000;
 }
 
 .bottom-row{
@@ -36,6 +128,7 @@ p h3{
     justify-content: space-around;
     align-items: center;
      padding-bottom: 70px;
+     z-index:9000;
 }
 
  
