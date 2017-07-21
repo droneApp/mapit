@@ -34,13 +34,13 @@ export default class Drone extends Component {
 componentDidMount() {
   window.addEventListener('keydown', this.handleKeyDown);
   window.addEventListener('keyup', this.handleKeyUp);
-  window.addEventListener('keypress', this.handleKeyPress);
+  document.addEventListener('keypress', this.handleKeyPress);
 }
 
 componentWillUnmount() {
   window.removeEventListener('keydown', this.handleKeyDown);
   window.removeEventListener('keyup', this.handleKeyUp);
-  window.removeEventListener('keypress', this.handleKeyPress);
+  document.removeEventListener('keypress', this.handleKeyPress);
 }
 
 
@@ -132,88 +132,92 @@ componentWillUnmount() {
 
 // keyboard function groundwork
   handleKeyPress(e){
-    if(e.charCode == keys.ENTER) {
-      return Axios.post('http://localhost:300/host').then(resp => {
+    switch(e.key){
+    case 'Enter': 
+      return Axios.post('http://localhost:3000/connect').then(resp => {
         console.log('connect: ', resp)
       })
-    }else if(e.charCode == keys.SHIFT) {
-      return Axios.post('http://localhost:300/land').then(resp => {
+      break;
+    case ' ': 
+      return Axios.post('http://localhost:3000/land').then(resp => {
         console.log('land: ', resp)
       })
-    }else if(e.charCode == keys.SPACE) {
-      return Axios.post('http://localhost:300/launch').then(resp => {
+      break;
+      case 'Alt':
+      console.log('work please')
+      return Axios.post('http://localhost:3000/launch').then(resp => {
         console.log('take-off: ', resp)
       })
-    }
+  }
   }
 
   handleKeyDown(e){
-    if(e.charCode == keys.A) {
-      return Axios.post('http://localhost:300/key-pan-left').then(resp => {
+    if(e.charCode === 65) {
+      return Axios.post('http://localhost:3000/key-pan-left').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode == keys.S) {
-      return Axios.post('http://localhost:300/key-pan-back').then(resp => {
+    }else if(e.charCode === 83) {
+      return Axios.post('http://localhost:3000/key-pan-back').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode == keys.D) {
-      return Axios.post('http://localhost:300/key-pan-right').then(resp => {
+    }else if(e.charCode === 68) {
+      return Axios.post('http://localhost:3000/key-pan-right').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode == keys.W) {
-      return Axios.post('http://localhost:300/key-pan-forward').then(resp => {
+    }else if(e.charCode === 87) {
+      return Axios.post('http://localhost:3000/key-pan-forward').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode == keys.UP) {
-      return Axios.post('http://localhost:300/key-up').then(resp => {
+    }else if(e.charCode === 73) {
+      return Axios.post('http://localhost:3000/key-up').then(resp => {
         console.log('y-move: ', resp)
       })
-    }else if(e.charCode == keys.DOWN) {
-      return Axios.post('http://localhost:300/key-down').then(resp => {
+    }else if(e.charCode === 75) {
+      return Axios.post('http://localhost:3000/key-down').then(resp => {
         console.log('y-move: ', resp)
       })
-    }else if(e.charCode == keys.RIGHT) {
-      return Axios.post('http://localhost:300/key-rotate-right').then(resp => {
+    }else if(e.charCode === 76) {
+      return Axios.post('http://localhost:3000/key-rotate-right').then(resp => {
         console.log('y-move: ', resp)
       })
-    }else if(e.charCode == keys.LEFT) {
-      return Axios.post('http://localhost:300/key-rotate-left').then(resp => {
+    }else if(e.charCode === 74) {
+      return Axios.post('http://localhost:3000/key-rotate-left').then(resp => {
         console.log('y-move: ', resp)
       })
     }
   }
 
 handleKeyUp(e){
-    if(e.charCode == keys.A) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+    if(e.charCode === 65) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode == keys.S) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+  }else if(e.charCode === 83) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode == keys.D) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+  }else if(e.charCode === 68) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode == keys.W) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+  }else if(e.charCode === 87) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode == keys.UP) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+  }else if(e.charCode === 73) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
-  }else if(e.charCode == keys.DOWN) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+  }else if(e.charCode === 75) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
-  }else if(e.charCode == keys.RIGHT) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+  }else if(e.charCode === 76) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
-  }else if(e.charCode == keys.LEFT) {
-    return Axios.post('http://localhost:300/stop').then(resp => {
+  }else if(e.charCode === 74) {
+    return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
   }
