@@ -1,11 +1,16 @@
 .team-background{
     position: absolute;
      background-color: var(--secondary-bg-color);
-     height: 175.5vh;
+     height: 190%;
      width: 100%;
      opacity: 0.9;
      z-index: -1;
 }
+    .team-names{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
 
 .team-title{
     display: flex;
@@ -55,9 +60,21 @@ width: 345px;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+    height: 15vh;
+    width:282px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkedIn{
+    height:30px;
+    width:30px;
+    padding-top: 10px;
+    
+
 }
 
-.steen:hover .steen-about-pics {
+.steen:hover .steen-team-pics {
  display: block;
  opacity: 0.3;
 
@@ -67,9 +84,11 @@ width: 345px;
     opacity: 1;
 }
 
-.dallin:hover .about-pics {
+.dallin:hover .team-pics {
  display: block;
  opacity: 0.3;
+ display: flex;
+ align-items: baseline;
 
     
 }
@@ -77,7 +96,7 @@ width: 345px;
     opacity: 1;
 }
 
-.jacob:hover .about-pics {
+.jacob:hover .team-pics {
  display: block;
  opacity: 0.3;
 
@@ -86,7 +105,7 @@ width: 345px;
 .jacob:hover .middle{
     opacity: 1;
 }
-.sean:hover .about-pics {
+.sean:hover .team-pics {
  display: block;
  opacity: 0.3;
 
@@ -97,19 +116,23 @@ width: 345px;
 }
 
 .full-page {
-    color: whitesmoke
+    color: whitesmoke;
+    height:190vh;
 }
 
-.steen-about-pics{
+.steen-team-pics{
         width: 346px;
         height:461px;
         transition: .5s ease;
   backface-visibility: hidden;
   opacity: 1;
   display: block;
+  border-radius: 90px;
 }
-.about-pics {
+.team-pics {
     height:68vh;
+    border-radius: 90px;
+    
     
     
     
@@ -127,6 +150,7 @@ width: 345px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 73px;
      padding-bottom: 70px;
      z-index:9000;
 }

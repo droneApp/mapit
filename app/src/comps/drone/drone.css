@@ -330,6 +330,10 @@ div{
         width:32vw;
         top:-160px;
     }
+    .ctrlparent{
+        left:5px;
+        bottom:5px;
+    }
 }
 @media (min-width: 1000px){
     .videofeed{
