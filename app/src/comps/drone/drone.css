@@ -1,6 +1,15 @@
 div{
-    user-select: none;
-   
+    user-select: none;  
+}
+.videofeed{
+    position: relative;
+    border:1px solid black;
+    width:100px;
+    height:85px;
+    border-radius: 10px;
+    bottom:0px;
+    left:41.5vw;
+    top:-90px;
 }
 .manualController{
     width:80vw;
@@ -13,10 +22,10 @@ div{
     height:100px;
 }
 .Pad1{
-    padding-left:8vw;
+     padding-left:8vw; 
 }
 .Pad2{
-    padding-left:8vw;
+     padding-left:8vw; 
 }
 
 .scopein{
@@ -45,13 +54,12 @@ div{
     left:44vw;
     cursor:pointer;
     font-size: 10px;
-    background-color: rgb(250,250,250);
+    background-color: #A7A9A8;
     height:20px;
     width:70px;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 5px #999;
 }
 .createdest:hover{background-color: rgb(200,200,200)}
 .createdest:active{
@@ -68,10 +76,9 @@ div{
     width:70px;
     height:20px;
     font-size: 10px;
-    background-color: rgb(250,250,250);
+    background-color: #A7A9A8;
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 5px #999;
 }
 .autopilot:hover{background-color: rgb(200,200,200)}
 .autopilot:active{
@@ -88,11 +95,10 @@ div{
     top:5px;
     padding-top:4px;
     font-size: 11px;
-    background-color: rgb(250,250,250);
+    background-color: #A7A9A8;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 5px #999;
 }
 .take-off:hover{background-color: rgb(200,200,200)}
 .take-off:active{
@@ -107,13 +113,12 @@ div{
     left:64vw;
     width:70px;
     height:14px;
-    background-color: rgb(250,250,250);
+    background-color: #A7A9A8;
     border: 1px solid black;
     text-align: center;
     padding-top:4px;
     font-size: 11px;
     border-radius: 5px;
-    box-shadow: 0 5px #999;
 }
 .land:hover{background-color: rgb(200,200,200)}
 .land:active{
@@ -132,6 +137,7 @@ div{
     width:105px; 
     border: 2px solid;
     border-radius:8px;
+    background-color: #A7A9A8;
 }
 .ctrlheader{
     padding-top:4px;
@@ -149,19 +155,19 @@ div{
 
 
 .counterclock{
-    width:35px;
-    height:35px;
-    transform: rotate(45deg);
-    padding-top:7px;
-    padding-left:2px;
+    transform: rotate(90deg);  
+    font-size: 43px;
+    text-align: center;
+    padding-left:5px;
+    color:whitesmoke;
 }
-.clock{
-    position: absolute;
-    width:35px;
-    height:35px;
-    transform: rotate(-135deg);
-    padding-bottom:5px;
-    padding-right:12px;  
+.clockwise{
+    transform: rotate(180deg);  
+    font-size: 43px;
+    padding-bottom:3px;
+    padding-left:2px;
+    text-align: center;
+    color:whitesmoke;
 }
 
 .downarrow{
@@ -202,7 +208,7 @@ div{
     text-align: center;
     padding-left: 5px;
     padding-top: 7px;
-    color:white;
+    color:whitesmoke;
 }
 .pad1left {
     user-select: none;
@@ -211,15 +217,11 @@ div{
     left: 0px;
     width: 50px;
     height: 50px;
-    background: var(--secondary-bg-color);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    background: blue;
     transform: rotate(-45deg);
     box-shadow: 4px 4px 5px #999; 
 }
-.pad1left:hover{background-color: rgb(91,155,255)}
+.pad1left:hover{background-color: darkblue}
 .pad1left:active{
     box-shadow:3px 3px 3px #777;
     transform: rotate(-45deg) translateX(2px) translateY(2px);
@@ -232,15 +234,11 @@ div{
     left: 40px;
     width: 50px;
     height: 50px;
-    background: var(--secondary-bg-color);
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -ms-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
+    background: green;
     transform: rotate(-135deg); 
     box-shadow: 4px 4px 5px #999; 
 }
-.pad1down:hover{background-color: rgb(91,155,255)}
+.pad1down:hover{background-color: darkgreen}
 .pad1down:active{
     box-shadow:3px 3px 3px #777;
     transform: rotate(-135deg) translateX(2px) translateY(2px);
@@ -252,15 +250,11 @@ div{
     left: 80px;
     width: 50px;
     height: 50px;
-    background: var(--secondary-bg-color);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    background: red;
     transform: rotate(135deg); 
     box-shadow: 4px 4px 5px #999; 
 }
-.pad1right:hover{background-color: rgb(91,155,255)}
+.pad1right:hover{background-color: darkred}
 .pad1right:active{
     box-shadow:3px 3px 3px #777;
     transform: rotate(135deg) translateX(2px) translateY(2px);
@@ -272,15 +266,11 @@ div{
     left: 40px;
     width: 50px;
     height: 50px;
-    background: var(--secondary-bg-color);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    background: gold;
     transform: rotate(45deg); 
     box-shadow: 4px 4px 5px #999; 
 }
-.pad1up:hover{background-color: rgb(91,155,255)}
+.pad1up:hover{background-color: darkgoldenrod}
 .pad1up:active{
     box-shadow:3px 3px 3px #777;
     transform: rotate(45deg) translateX(2px) translateY(2px);
@@ -290,18 +280,24 @@ div{
     .manualController{
         height:50vh;
     }
+    .Pad2{
+        padding-left:40vw;
+    }
     .Pads{
         padding-top: 10vh;
         padding-left:10vw;
     }
     .take-off{
-        margin-left:6.5vw;
+        margin-left:-1vw;
+         margin-top:10px; 
         height:20px;
         width:100px;
         font-size:16px;
     }
     .land{
-        margin-left:2.5vw;
+        margin-left:10.7vw;
+        /* margin-bottom:10px; */
+        top:-20px;
         height:20px;
         font-weight:bold;
         font-size:16px;
@@ -312,6 +308,7 @@ div{
         font-size:14px;
         width:90px;
         height:30px;
+    
     }
     .autopilot{
         left:47vw;
@@ -324,5 +321,15 @@ div{
         width:170px;
         height:100px;
     }
-
+    .videofeed{
+        left:37vw;
+        height:35vh;
+        width:32vw;
+        top:-160px;
+    }
+}
+@media (min-width: 1000px){
+    .videofeed{
+        left:35.5vw
+    }
 }
