@@ -1,11 +1,16 @@
 .team-background{
     position: absolute;
      background-color: var(--secondary-bg-color);
-     height: 175.5vh;
+     height: 166%;
      width: 100%;
      opacity: 0.9;
      z-index: -1;
 }
+    .team-names{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
 
 .team-title{
     display: flex;
@@ -55,6 +60,14 @@ width: 345px;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+    height: 15vh;
+    width:282px;
+}
+.linkedIn{
+    height:30px;
+    width:30px;
+    
+
 }
 
 .steen:hover .steen-about-pics {
