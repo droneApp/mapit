@@ -104,10 +104,7 @@ export default class Drone extends Component {
     })
 
   }
-  // document.getElementById("leftPan").addEventListener ("click", panLeft, false);
-  // document.getElementById("backPan").addEventListener ("click", panBack, false);
-  // document.getElementById("rightPan").addEventListener ("click", panRight, false);
-  // document.getElementById("forwardPan").addEventListener ("click", panForward, false);
+
 
 
 
@@ -118,30 +115,53 @@ export default class Drone extends Component {
 
         return(
 
-            <div className="manualController">
 
 
-                {/* pan movements */}
-                <div onClick={event => this.panLeft(event.target.id)} id="leftPan" className="manualButton pad1left"><p className="diamondtext">&larr;</p></div>
-                <div onClick={event => this.panBack(event.target.id)} id="backPan" className="manualButton pad1down"><p className="diamondtext">&larr;</p></div>
-                <div onClick={event => this.panRight(event.target.id)} id="rightPan" className="manualButton pad1right"><p className="diamondtext">&larr;</p></div>
-                <div onClick={event => this.panForward(event.target.id)} id="forwardPan" className="manualButton pad1up"><p className="diamondtext">&larr;</p></div>
+      <div className="manualController">
+         <div className="Pads">
+         <div className="Pad1">
+           <div onClick={event => this.panLeft(event.target.id)} id="leftPan" className="manualButton pad1left"><p className="diamondtext">&larr;</p></div>
+           <div onClick={event => this.panBack(event.target.id)} id="backPan" className="manualButton pad1down"><p className="diamondtext">&larr;</p></div>
+           <div onClick={event => this.panRight(event.target.id)} id="rightPan" className="manualButton pad1right"><p className="diamondtext">&larr;</p></div>
+           <div onClick={event => this.panForward(event.target.id)} id="forwardPan" className="manualButton pad1up"><p className="diamondtext">&larr;</p></div>
+         </div>
 
-                {/* Altitude and rotation movements */}
-                <div onClick={event => this.rotateLeft(event.target.id)} className="manualButton pad2left"><img className="counterclock" src={require("./assets/counterclock.png")} alt="Turn Left" /></div>
-                <div onClick={event => this.down(event.target.id)} className="manualButton pad2down"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
-                <div onClick={event => this.rotateRight(event.target.id)} className="manualButton pad2right"><img className="clock" src={require("./assets/clockwise.png")} alt="Turn right" /></div>
-                <div onClick={event => this.up(event.target.id)} className="manualButton pad2up"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
-                <div className="manualButton scope">+</div>
-                <div className="manualButton scopeout">-</div>
-                <div className="manualButton photo">Take Photo</div>
-                <div onClick={event => this.stop(event.target.id)} className="manualButton destination">Hover</div>
-                <div onClick={event => this.launch(event.target.id)} className="manualButton autopilot">Auto-Pilot to Destination</div>
-                <div onClick={event => this.launch(event.target.id)} className="manualButton depart">Take-Off</div>
-                <div onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
 
-            </div>
+         <div className="Pad2">
+            <div  onClick={event => this.rotateLeft(event.target.id)} className="manualButton pad1left"><p className="counterclock">&#8634;</p></div>
+            <div onClick={event => this.down(event.target.id)} className="manualButton pad1down"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
+            <div onClick={event => this.rotateRight(event.target.id)} className="manualButton pad1right"><p className="clockwise">&#8635;</p></div>
+            <div onClick={event => this.up(event.target.id)} className="manualButton pad1up"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
+          </div>
 
+
+
+
+         </div>
+         <div onClick={event => this.launch(event.target.id)} className="manualButton take-off">Take-Off</div>
+         <div onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
+         <div className="videofeed"></div>
+
+         <div onClick={event => this.stop(event.target.id)}  className="manualButton createdest">Create Destination</div>
+         <div onClick={event => this.launch(event.target.id)} className="manualButton autopilot">Auto-Pilot to Destination</div>
+
+
+         {/* <div className="manualButton scopein">+</div>
+         <div className="manualButton scopeout">-</div>
+         <div className="manualButton photo"><img src={require('./assets/camera.png')} alt="Take Photo" /></div> */}
+
+         <div className="ctrlparent">
+           <div className="controls">
+             <div className="ctrlheader">Keyboard Controls</div>
+             <div>WASD = Left Pad</div>
+             <div>Arrow = Right Pad</div>
+             <div>Space Bar = Takeoff/Land</div>
+             <div>Q = Scope Out</div>
+             <div>W = Scope In</div>
+            <div>Enter = Take Photo</div>
+           </div>
+         </div>
+       </div>
 
         )
     }
