@@ -61,14 +61,15 @@ componentWillUnmount() {
             <div className="manualButton pad1up"><p className="diamondtext">&larr;</p></div>
           </div>
           <div className="Pad2">
-            <div className="manualButton pad1left"><img className="counterclock" src={require("./assets/counterclock.png")} alt="Turn Left" /></div>
+            <div className="manualButton pad1left"><p className="counterclock">&#8634;</p></div>
             <div className="manualButton pad1down"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
-            <div className="manualButton pad1right"><img className="clock" src={require("./assets/clockwise.png")} alt="Turn Left" /></div>
+            <div className="manualButton pad1right"><p className="clockwise">&#8635;</p></div>
             <div className="manualButton pad1up"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
           </div>
           </div> 
           <div className="manualButton take-off">Take-Off</div>
           <div className="manualButton land">Land</div>
+          <div className="videofeed"></div>
 
           <div className="manualButton createdest">Create Destination</div>
           <div className="manualButton autopilot">Auto-Pilot to Destination</div>
