@@ -14,29 +14,53 @@ render() {
 return (
     <main>
 <Header />
-
+<div className="team-background"/>
 <div className="full-page">
     
-<h1 className="team-title">About Us</h1>
+<container className="team-title"><h1>About Us</h1></container>
+
+{/*Top pictures  */}
 <section className="top-row">
-<h3>
+   {/* Steen's Section */}
+ <div className="steen">
+  <h3>Steen</h3>  
 <img className='steen-about-pics' src='./our-pics/16797776_10158254923960300_8611520582224132040_o.jpg' />
-Steen
-<p>Area where we can write about ourselves</p></h3>
-<h3>
+    <div className="middle">
+<p className="our-text">Area where we can write about ourselves</p>
+    </div>
+</div>
+
+{/* Dallin's section  */}
+<div className="dallin">
+<h3>Dallin</h3>
 <img className='about-pics' src='./our-pics/FullSizeRender.jpg' alt="hello" />
-Dallin
-<p>Area where we can write about ourselves</p></h3>
+<div className="middle">
+<p className="our-text">Area where we can write about ourselves</p>
+</div>
+</div>
 </section>
+
+{/*Bottom Pictures*/}
 <section className="bottom-row">
-<h3>
+    
+    {/* Jacob's Section  */}
+    <div className="jacob">
+<h3>Jacob</h3>
 <img className='about-pics' src='./our-pics/IMG_0051_720.JPG' />
-Jacob
-<p>Area where we can write about ourselves</p></h3>
-<h3>
+<div className="middle">
+<p className="our-text">Area where we can write about ourselves</p>
+</div>
+</div>
+
+    {/* Sean's Section  */}
+<div className="sean">
+<h3>Sean</h3>
 <img className='about-pics' src='./our-pics/with-Doge.jpg' />
-Sean
-<p>Area where we can write about ourselves</p></h3>
+<div className="middle">
+<p className="our-text">Area where we can write about ourselves</p>
+</div>
+</div>
+
 </section>
 
 </div>
