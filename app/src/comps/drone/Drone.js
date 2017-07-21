@@ -12,10 +12,10 @@ export default class Drone extends Component {
     this.state = {
       droneAction: ''
     },
-    this._changeStatus = this._changeStatus.bind(this);
-    this._onKeydown = this._onKeydown.bind(this);
-    this._onKeyup = this._onKeyup.bind(this);
-    this._onKeypress = this._onKeypress.bind(this);
+    // this._changeStatus = this._changeStatus.bind(this);
+    // this._onKeydown = this._onKeydown.bind(this);
+    // this._onKeyup = this._onKeyup.bind(this);
+    // this._onKeypress = this._onKeypress.bind(this);
 
   // binding keyclick functions
   this.panLeft = this.panLeft.bind(this)
@@ -45,6 +45,12 @@ componentWillUnmount() {
 
 
   // click function groundwork
+  connect(){
+    console.log('video stream')
+    return Axios.post('http://localhost:3000/connect').then(resp => {
+      console.log(resp)
+    })
+  }
   launch(){
     console.log('launching')
     return Axios.post('http://localhost:3000/launch').then(resp => {
@@ -156,7 +162,7 @@ componentWillUnmount() {
          </div>
          <div onClick={event => this.launch(event.target.id)} className="manualButton take-off">Take-Off</div>
          <div onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
-         <div className="videofeed"></div>
+         <div onClick={event => this.connect(event.target.id)}className="manualButton videofeed">Connect</div>
 
          <div onClick={event => this.stop(event.target.id)}  className="manualButton createdest">Create Destination</div>
          <div onClick={event => this.launch(event.target.id)} className="manualButton autopilot">Auto-Pilot to Destination</div>
