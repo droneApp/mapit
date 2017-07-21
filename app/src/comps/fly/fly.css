@@ -1,3 +1,7 @@
 .controllerContain {
     height: 400px;
 }
+
+.all-tabs { 
+background-color: var(--primary-bg-color) !important;
+}
