@@ -3,5 +3,10 @@
 }
 
 .all-tabs { 
-background-color: var(--primary-bg-color) !important;
+ background-color: black !important; 
+
+}
+.all-tabs:hover{
+    letter-spacing: 3px;
+     background-color:#2d2d2d !important; 
 }
