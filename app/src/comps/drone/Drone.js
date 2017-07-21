@@ -135,7 +135,7 @@ export default class Drone extends Component {
                 <div className="manualButton scopeout">-</div>
                 <div className="manualButton photo">Take Photo</div>
                 <div onClick={event => this.stop(event.target.id)} className="manualButton destination">Hover</div>
-                <div className="manualButton autopilot">Auto-Pilot to Destination</div>
+                <div onClick={event => this.launch(event.target.id)} className="manualButton autopilot">Auto-Pilot to Destination</div>
                 <div onClick={event => this.launch(event.target.id)} className="manualButton depart">Take-Off</div>
                 <div onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
             </div>

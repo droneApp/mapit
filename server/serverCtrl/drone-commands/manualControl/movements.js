@@ -43,7 +43,7 @@ module.exports = {
       drone.stop();
       console.log('stopped')
     }, 500);
-
+  res.status(200).send("Fuckin neato.")
 
   },
   pan_back: function(req, res){
@@ -55,7 +55,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-
+  res.status(200).send("Fuckin neato.")
   },
   pan_right: function(req, res){
     console.log('panned right')
@@ -66,7 +66,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-
+  res.status(200).send("Fuckin neato.")
   },
   pan_forward: function(req, res){
     console.log('panned forward')
@@ -77,7 +77,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-
+  res.status(200).send("Fuckin neato.")
   },
 
 
@@ -91,7 +91,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-
+  res.status(200).send("Fuckin neato.")
   },
 
   down: function(req, res){
@@ -103,19 +103,19 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-
+  res.status(200).send("Fuckin neato.")
   },
 
   rotate_right: function(req, res){
     console.log('rotate right')
-    drone.left(50)
+    drone.clockwise(50)
 
     setTimeout(function() {
-      drone.clockwise();
+      drone.stop();
       console.log('stopped')
     }, 500);
 
-
+  res.status(200).send("Fuckin neato.")
   },
 
   rotate_left: function(req, res){
@@ -127,11 +127,12 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-
+  res.status(200).send("Fuckin neato.")
   },
   stop: function(req, res){
     console.log('stopped')
     drone.stop()
+    res.status(200).send("Fuckin neato.")
   },
 
 
@@ -139,10 +140,13 @@ module.exports = {
     console.log('landed')
     setTimeout(function() {
       drone.land();
-      console.log('stopped')
+
     }, 100);
 
-
+    setTimeout(function() {
+      drone.emergency();
+    }, 1300);
+  res.status(200).send("Fuckin neato.")
   }
 
 

@@ -13,6 +13,18 @@
 //
 // const Newmap = withGoogleMap(props => {
 //
+//   // this.props = {
+//   //   markers: [{
+//   //     position: {
+//   //       lat: 25.0112183,
+//   //       lng: 121.52067570000001,
+//   //     },
+//   //     key: `Taiwan`,
+//   //     defaultAnimation: 2,
+//   //   }],
+//   // };
+//
+//
 //   <GoogleMap
 //
 //     ref={props.onMapLoad}
