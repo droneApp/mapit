@@ -41,12 +41,6 @@ const TabsExampleSimple = () => (
         <p>
           {/* This is an example tab. */}
         </p>
-<<<<<<< HEAD
-=======
-        <p>
-          {/* You can put any sort of HTML or react component in here. It even keeps the component state! */}
-        </p>
->>>>>>> master
 
         <Drone/>
 
