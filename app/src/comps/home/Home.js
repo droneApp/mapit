@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+
+import ReactDOM, {render} from 'react-dom'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
-
+import {Link} from 'react-router-dom'
 
 
 import Parallax from 'parallax-js'
