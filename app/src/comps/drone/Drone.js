@@ -12,33 +12,36 @@ export default class Drone extends Component {
     this.state = {
       droneAction: ''
     },
-    // this._changeStatus = this._changeStatus.bind(this);
-    // this._onKeydown = this._onKeydown.bind(this);
-    // this._onKeyup = this._onKeyup.bind(this);
-    // this._onKeypress = this._onKeypress.bind(this);
+
+    this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.handleKeyUp = this.handleKeyUp.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
 
   // binding keyclick functions
   this.panLeft = this.panLeft.bind(this)
   this.panBack = this.panBack.bind(this)
   this.panRight = this.panRight.bind(this)
   this.panForward = this.panForward.bind(this)
+  this.up = this.up.bind(this)
+  this.down = this.down.bind(this)
+  this.rotateLeft = this.rotateLeft.bind(this)
+  this.rotateRight = this.rotateRight.bind(this)
   this.stop = this.stop.bind(this)
 
 
 // end of constructor
   }
 componentDidMount() {
-  window.addEventListener('keydown', this._onKeydown);
-  window.addEventListener('keyup', this._onKeyup);
-  window.addEventListener('keypress', this._onKeypress);
+  window.addEventListener('keydown', this.handleKeyDown);
+  window.addEventListener('keyup', this.handleKeyUp);
+  window.addEventListener('keypress', this.handleKeyPress);
 }
 
 componentWillUnmount() {
-  window.removeEventListener('keydown', this._onKeydown);
-  window.removeEventListener('keyup', this._onKeyup);
-  window.removeEventListener('keypress', this._onKeypress);
+  window.removeEventListener('keydown', this.handleKeyDown);
+  window.removeEventListener('keyup', this.handleKeyUp);
+  window.removeEventListener('keypress', this.handleKeyPress);
 }
-
 
 
 
@@ -127,10 +130,94 @@ componentWillUnmount() {
 
   }
 
+// keyboard function groundwork
+  handleKeyPress(e){
+    if(e.charCode == keys.ENTER) {
+      return Axios.post('http://localhost:300/host').then(resp => {
+        console.log('connect: ', resp)
+      })
+    }else if(e.charCode == keys.SHIFT) {
+      return Axios.post('http://localhost:300/land').then(resp => {
+        console.log('land: ', resp)
+      })
+    }else if(e.charCode == keys.SPACE) {
+      return Axios.post('http://localhost:300/launch').then(resp => {
+        console.log('take-off: ', resp)
+      })
+    }
+  }
 
+  handleKeyDown(e){
+    if(e.charCode == keys.A) {
+      return Axios.post('http://localhost:300/key-pan-left').then(resp => {
+        console.log('x-move: ', resp)
+      })
+    }else if(e.charCode == keys.S) {
+      return Axios.post('http://localhost:300/key-pan-back').then(resp => {
+        console.log('x-move: ', resp)
+      })
+    }else if(e.charCode == keys.D) {
+      return Axios.post('http://localhost:300/key-pan-right').then(resp => {
+        console.log('x-move: ', resp)
+      })
+    }else if(e.charCode == keys.W) {
+      return Axios.post('http://localhost:300/key-pan-forward').then(resp => {
+        console.log('x-move: ', resp)
+      })
+    }else if(e.charCode == keys.UP) {
+      return Axios.post('http://localhost:300/key-up').then(resp => {
+        console.log('y-move: ', resp)
+      })
+    }else if(e.charCode == keys.DOWN) {
+      return Axios.post('http://localhost:300/key-down').then(resp => {
+        console.log('y-move: ', resp)
+      })
+    }else if(e.charCode == keys.RIGHT) {
+      return Axios.post('http://localhost:300/key-rotate-right').then(resp => {
+        console.log('y-move: ', resp)
+      })
+    }else if(e.charCode == keys.LEFT) {
+      return Axios.post('http://localhost:300/key-rotate-left').then(resp => {
+        console.log('y-move: ', resp)
+      })
+    }
+  }
 
-
-
+handleKeyUp(e){
+    if(e.charCode == keys.A) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('x-move: ', resp)
+    })
+  }else if(e.charCode == keys.S) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('x-move: ', resp)
+    })
+  }else if(e.charCode == keys.D) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('x-move: ', resp)
+    })
+  }else if(e.charCode == keys.W) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('x-move: ', resp)
+    })
+  }else if(e.charCode == keys.UP) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('y-move: ', resp)
+    })
+  }else if(e.charCode == keys.DOWN) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('y-move: ', resp)
+    })
+  }else if(e.charCode == keys.RIGHT) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('y-move: ', resp)
+    })
+  }else if(e.charCode == keys.LEFT) {
+    return Axios.post('http://localhost:300/stop').then(resp => {
+      console.log('y-move: ', resp)
+    })
+  }
+}
 
 
     render(){
@@ -142,27 +229,27 @@ componentWillUnmount() {
       <div className="manualController">
          <div className="Pads">
          <div className="Pad1">
-           <div onClick={event => this.panLeft(event.target.id)} id="leftPan" className="manualButton pad1left"><p className="diamondtext">&larr;</p></div>
-           <div onClick={event => this.panBack(event.target.id)} id="backPan" className="manualButton pad1down"><p className="diamondtext">&larr;</p></div>
-           <div onClick={event => this.panRight(event.target.id)} id="rightPan" className="manualButton pad1right"><p className="diamondtext">&larr;</p></div>
-           <div onClick={event => this.panForward(event.target.id)} id="forwardPan" className="manualButton pad1up"><p className="diamondtext">&larr;</p></div>
+           <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.panLeft(event.target.id)} id="leftPan" className="manualButton pad1left"><p className="diamondtext">&larr;</p></div>
+           <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.panBack(event.target.id)} id="backPan" className="manualButton pad1down"><p className="diamondtext">&larr;</p></div>
+           <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.panRight(event.target.id)} id="rightPan" className="manualButton pad1right"><p className="diamondtext">&larr;</p></div>
+           <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.panForward(event.target.id)} id="forwardPan" className="manualButton pad1up"><p className="diamondtext">&larr;</p></div>
          </div>
 
 
          <div className="Pad2">
-            <div  onClick={event => this.rotateLeft(event.target.id)} className="manualButton pad1left"><p className="counterclock">&#8634;</p></div>
-            <div onClick={event => this.down(event.target.id)} className="manualButton pad1down"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
-            <div onClick={event => this.rotateRight(event.target.id)} className="manualButton pad1right"><p className="clockwise">&#8635;</p></div>
-            <div onClick={event => this.up(event.target.id)} className="manualButton pad1up"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
+            <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.rotateLeft(event.target.id)} className="manualButton pad1left"><p className="counterclock">&#8634;</p></div>
+            <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.down(event.target.id)} className="manualButton pad1down"><p className="down">DOWN</p><p className="downarrow">&#8897;</p></div>
+            <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.rotateRight(event.target.id)} className="manualButton pad1right"><p className="clockwise">&#8635;</p></div>
+            <div onKeyDown={event => this.handleKeyDown(event.target.id)} onKeyUp={event => this.handleKeyUp(event.target.id)} onClick={event => this.up(event.target.id)} className="manualButton pad1up"><p className="uparrow">&#8896;</p><p className="up">UP</p></div>
           </div>
 
 
 
 
          </div>
-         <div onClick={event => this.launch(event.target.id)} className="manualButton take-off">Take-Off</div>
-         <div onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
-         <div onClick={event => this.connect(event.target.id)}className="manualButton videofeed">Connect</div>
+         <div onKeyPress={event => this.handleKeyPress(event.target.id)} onClick={event => this.launch(event.target.id)} className="manualButton take-off">Take-Off</div>
+         <div onKeyPress={event => this.handleKeyPress(event.target.id)} onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
+         <div onKeyPress={event => this.handleKeyPress(event.target.id)} onClick={event => this.connect(event.target.id)}className="manualButton videofeed">Connect</div>
 
          <div onClick={event => this.stop(event.target.id)}  className="manualButton createdest">Create Destination</div>
          <div onClick={event => this.launch(event.target.id)} className="manualButton autopilot">Auto-Pilot to Destination</div>
