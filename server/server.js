@@ -54,23 +54,6 @@ app.post('/evasive', tests.evasive)
 // testing bi directional control input
 app.post('/bi', tests.biDirectional)
 
-//endpoints for manual controller
-// app.post('/drone/space', controller.takeOff)
-// app.post('/drone/shift', controller.land)
-// app.post('/drone/w', controller.flyUp)
-// app.post('/drone/s', controller.flyDown)
-// app.post('/drone/a', controller.flyLeft)
-// app.post('/drone/d', controller.flyRight)
-// app.post('/drone/i', controller.flyForward)
-// app.post('/drone/k', controller.flyBackwards)
-// app.post('/drone/j', controller.flyCounterClockwise)
-// app.post('/drone/l', controller.flyClockwise)
-// app.post('/drone/f', controller.picture)
-// app.post('/drone/h', controller.videoOn)
-// app.post('/drone/g', controller.videoOff)
-
-
-
 
 const manualMotions = require('./serverCtrl/drone-commands/manualControl/movements.js')
 // manual stop
@@ -80,11 +63,13 @@ app.post('/stop', manualMotions.stop)
 // manual control launch, pan, and land movements
 app.post('/connect', manualMotions.connect)
 app.post('/launch', manualMotions.launch)
+app.post('/land', manualMotions.land)
+
+// pan commands
 app.post('/pan-left', manualMotions.pan_left)
 app.post('/pan-back', manualMotions.pan_back)
 app.post('/pan-right', manualMotions.pan_right)
 app.post('/pan-forward', manualMotions.pan_forward)
-app.post('/land', manualMotions.land)
 
 // up down and rotate commands
 app.post('/up', manualMotions.up)
@@ -92,6 +77,17 @@ app.post('/down', manualMotions.down)
 app.post('/rotate-right', manualMotions.rotate_right)
 app.post('/rotate-left', manualMotions.rotate_left)
 
+// keyboard x-axis
+app.post('/key-pan-left', manualMotions.a_pan_left)
+app.post('/key-pan-back', manualMotions.s_pan_back)
+app.post('/key-pan-right', manualMotions.d_pan_right)
+app.post('/key-pan-forward', manualMotions.w_pan_forward)
+
+// keyboard y-axis
+app.post('/key-up', manualMotions.up_arrow)
+app.post('key-down', manualMotions.down_arrow)
+app.post('/key-rotate-right', manualMotions.rotate_right_arrow)
+app.post('/key-rotate-left', manualMotions.rotate_left_arrow)
 
 
 app.listen(3000, function() {

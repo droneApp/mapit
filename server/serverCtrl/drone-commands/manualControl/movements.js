@@ -14,10 +14,19 @@ module.exports = {
 
   connect: function (req, res){
     // create client
+     console.log('connected with video')
     const drone = bebop.createClient()
     drone.connect(function() {
+    //   var output;
+    //   var stream = drone.getVideoStream();
+    //   stream.on('data', function(buf){
+    //   output = buf;
+    // });
+    // drone.emit('video', new Buffer([0xff]));
+    // // expect(output[0]).to.equal(0xff);
+    })
     res.status(200).send("Fuckin neato.")
-  })
+   
   },
 
 
@@ -25,11 +34,11 @@ module.exports = {
   launch: function(req, res){
 
     console.log('tookoff')
-    drone.connect(function() {
-    drone.takeOff(drone.stop)
-
+    drone.takeOff(function(){
+      drone.stop()
+    })
     res.status(200).send("Launching Bebopboolopadoop.")
-  })
+  
 
 
   },
@@ -147,6 +156,54 @@ module.exports = {
       drone.emergency();
     }, 1300);
   res.status(200).send("Fuckin neato.")
+  },
+
+///////////////Keyboard Specific Functions/////////////////
+
+///Pad 1///
+
+  a_pan_left: function(req, res){
+    console.log('key pan left')
+    drone.left(50)
+    res.status(200).send("I'm Flying.")
+  },
+  s_pan_back: function(req, res){
+    console.log('key pan back')
+    drone.back(50)
+    res.status(200).send("I'm Flying.")
+  },
+  d_pan_right: function(req, res){
+    console.log('key pan right')
+    drone.right(50)
+    res.status(200).send("I'm Flying.")
+  },
+  w_pan_forward: function(req, res){
+    console.log('key pan forward')
+    drone.forward(50)
+    res.status(200).send("I'm Flying.")
+  },
+
+///Pad 2///
+
+  up_arrow: function(req, res){
+    console.log('key going up')
+    drone.up(50)
+    res.status(200).send("I'm Flying.")
+  },
+  down_arrow: function(req, res){
+    console.log('key going down')
+    drone.down(50)
+    res.status(200).send("I'm Flying.")
+  },
+  rotate_right_arrow: function(req, res){
+    console.log('key rotate right')
+    drone.clockwise(50)
+    res.status(200).send("I'm Flying.")
+  },
+  rotate_left_arrow: function(req, res){
+    console.log('key rotate left')
+    drone.counterClockwise(50)
+    res.status(200).send("I'm Flying.")
   }
 
 
