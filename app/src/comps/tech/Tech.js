@@ -11,8 +11,12 @@ class Tech extends Component {
         return (
 
             <main>
+<<<<<<< HEAD
                <Header/>
                
+=======
+               <Header />
+>>>>>>> master
 
             <div>
                 
