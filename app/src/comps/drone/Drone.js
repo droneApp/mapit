@@ -115,6 +115,7 @@ export default class Drone extends Component {
 
 
     render(){
+
         return(
 
             <div className="manualController">
@@ -138,6 +139,7 @@ export default class Drone extends Component {
                 <div onClick={event => this.launch(event.target.id)} className="manualButton autopilot">Auto-Pilot to Destination</div>
                 <div onClick={event => this.launch(event.target.id)} className="manualButton depart">Take-Off</div>
                 <div onClick={event => this.land(event.target.id)} className="manualButton land">Land</div>
+
             </div>
 
 

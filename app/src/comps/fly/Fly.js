@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './fly.css';
-
 import {Link} from 'react-router-dom'
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 
-
+// import {Link} from 'react-router-dom'
+import {Tabs, Tab} from 'material-ui/Tabs';
+import Slider from 'material-ui/Slider';
 import Drone from '../drone/Drone';
 
 
@@ -39,21 +40,20 @@ const TabsExampleSimple = () => (
   <div>
   <Header />
   <Tabs>
-    <Tab label="Fly" >
+
+    <Tab  className="all-tabs" label="First" >
+
       <div>
-        <h2 style={styles.headline}>Fly</h2>
+        <h2 style={styles.headline}>First</h2>
         <p>
-          This is an example tab.
-        </p>
-        <p>
-          You can put any sort of HTML or react component in here. It even keeps the component state!
+          {/* This is an example tab. */}
         </p>
 
         <Drone/>
 
       </div>
     </Tab>
-    <Tab label="Map 1" >
+    <Tab className="all-tabs" label="Map 1" >
       <div>
         <h2 style={styles.headline}>Map1</h2>
         <p>
@@ -61,7 +61,7 @@ const TabsExampleSimple = () => (
         </p>
       </div>
     </Tab>
-    <Tab
+    <Tab className="all-tabs"
       label="Map 2"
       data-route="/home"
 
@@ -73,6 +73,7 @@ const TabsExampleSimple = () => (
         </p>
       </div>
     </Tab>
+
   </Tabs>
 
   <Footer />
