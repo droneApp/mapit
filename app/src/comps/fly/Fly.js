@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './fly.css';
 import {Link} from 'react-router-dom'
-import {Tabs, Tab} from 'material-ui/Tabs';
-import Slider from 'material-ui/Slider';
 
 // import {Link} from 'react-router-dom'
 import {Tabs, Tab} from 'material-ui/Tabs';
