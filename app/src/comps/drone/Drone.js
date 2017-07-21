@@ -58,10 +58,10 @@ class Drone extends Component {
           <div className="manualButton createdest">Create Destination</div>
           <div className="manualButton autopilot">Auto-Pilot to Destination</div>
           
-          
-          {/* <div className="manualButton scopein">+</div>
+           
+           <div className="manualButton scopein">+</div>
           <div className="manualButton scopeout">-</div>
-          <div className="manualButton photo"><img src={require('./assets/camera.png')} alt="Take Photo" /></div> */}
+          <div className="manualButton photo"><img src={require('./assets/camera.png')} alt="Take Photo" /></div>   
 
           <div className="ctrlparent">
             <div className="controls">

@@ -29,21 +29,24 @@ div{
 }
 
 .scopein{
-    top: 190px;
+    position: absolute;
     font-size: 25px;
-    left:55px;
+    right:10px;
+    bottom:40px;
     cursor:pointer;
 }
 .scopeout{
-    cursor:pointer;
-    top: 190px;
+    position: absolute;
     font-size: 25px;
-    left: 10px;
+    right:60px;
+    bottom:40px;
+    cursor:pointer;
 }
 .photo{
+    position: absolute;
+    right:20px;
+    bottom:20px;
     cursor:pointer;
-    top: 215px;
-    left: 25px;
     height:20px;
     width:40px;
 }
