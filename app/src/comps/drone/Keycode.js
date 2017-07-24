@@ -1,4 +1,5 @@
-// Keyboard keys frequenly used by this app
+// NOT USED, e.charCode is depreicated and does not function correctly
+// used e.key instead which made this obsolete
 const keys = {
   ENTER: 13,
   SPACE: 32,
