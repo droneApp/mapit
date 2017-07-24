@@ -29,21 +29,24 @@ div{
 }
 
 .scopein{
-    top: 190px;
+    position: absolute;
     font-size: 25px;
-    left:55px;
+    right:10px;
+    bottom:40px;
     cursor:pointer;
 }
 .scopeout{
-    cursor:pointer;
-    top: 190px;
+    position: absolute;
     font-size: 25px;
-    left: 10px;
+    right:60px;
+    bottom:40px;
+    cursor:pointer;
 }
 .photo{
+    position: absolute;
+    right:20px;
+    bottom:20px;
     cursor:pointer;
-    top: 215px;
-    left: 25px;
     height:20px;
     width:40px;
 }
@@ -122,6 +125,26 @@ div{
 }
 .land:hover{background-color: rgb(200,200,200)}
 .land:active{
+    box-shadow:0 2px #666;
+    transform: translateY(4px);
+}
+.videofeed{
+    cursor:pointer;
+    position: relative;
+    font-weight: bold;
+    top:-14px;
+    left:64vw;
+    width:70px;
+    height:14px;
+    /* background-color: #A7A9A8; */
+    border: 1px solid black;
+    text-align: center;
+    padding-top:4px;
+    font-size: 11px;
+    border-radius: 5px;
+}
+.videofeed:hover{background-color: rgb(200,200,200)}
+.videofeed:active{
     box-shadow:0 2px #666;
     transform: translateY(4px);
 }
@@ -303,6 +326,14 @@ div{
         font-size:16px;
         
     }
+     .videofeed{
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+        font-weight:bold;
+        font-size:48px;
+        
+    }
     .createdest{
         left:47vw;
         font-size:14px;
@@ -326,6 +357,10 @@ div{
         height:35vh;
         width:32vw;
         top:-160px;
+    }
+    .ctrlparent{
+        left:5px;
+        bottom:5px;
     }
 }
 @media (min-width: 1000px){
