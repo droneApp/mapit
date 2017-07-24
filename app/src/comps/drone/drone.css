@@ -125,6 +125,26 @@ div{
     box-shadow:0 2px #666;
     transform: translateY(4px);
 }
+.videofeed{
+    cursor:pointer;
+    position: relative;
+    font-weight: bold;
+    top:-14px;
+    left:64vw;
+    width:70px;
+    height:14px;
+    /* background-color: #A7A9A8; */
+    border: 1px solid black;
+    text-align: center;
+    padding-top:4px;
+    font-size: 11px;
+    border-radius: 5px;
+}
+.videofeed:hover{background-color: rgb(200,200,200)}
+.videofeed:active{
+    box-shadow:0 2px #666;
+    transform: translateY(4px);
+}
 .ctrlparent{
     position: absolute;
     bottom:0px;
@@ -301,6 +321,14 @@ div{
         height:20px;
         font-weight:bold;
         font-size:16px;
+        
+    }
+     .videofeed{
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+        font-weight:bold;
+        font-size:48px;
         
     }
     .createdest{
