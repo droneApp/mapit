@@ -1,6 +1,6 @@
 ## Drone Map-it
-A program to control your personal drone with your computer. Simple clean controller for handling drone. (url of hosted)
-
+Control your personal drone and stream video feed from your drone camera from your computer with a clean controller. (url of hosted)
+(image of controller)
 ## Getting Started
 Clone the repo
 
@@ -19,7 +19,7 @@ You will run npm start inside app where you should already be. We used the bebop
 ## Using The App
 
 After navigating to the Fly page and connecting to your drone
-<!--gif of clicking on navigating to fly page and fly-->
+(gif of clicking on navigating to fly page and fly)
 You can use the controller to depart, land, and move your drone. the height is initially set to 50% of max height. Before immersing yourself test each button to see how it impacts your personal drone.
 
 ## Important Mentions
@@ -47,7 +47,7 @@ Don't's
 If you discover any bugs, feel free to create an issue on GitHub and send us a pull request.
 
 ## Authors
-Steen Sargent - look at steen its sandra dee
+Steen Sargent - look at steen its sandra dee - https://github.com/sargent88
 
 Dallin Anderson - WOW ITs GREASED LIGHTNING - https://github.com/Dallin11
 
