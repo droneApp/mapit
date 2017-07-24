@@ -25,7 +25,7 @@ module.exports = {
     // drone.emit('video', new Buffer([0xff]));
     // // expect(output[0]).to.equal(0xff);
     })
-    res.status(200).send("Fuckin neato.")
+    res.status(200).send("I can fly!")
    
   },
 
@@ -52,7 +52,7 @@ module.exports = {
       drone.stop();
       console.log('stopped')
     }, 500);
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
 
   },
   pan_back: function(req, res){
@@ -64,7 +64,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
   pan_right: function(req, res){
     console.log('panned right')
@@ -75,7 +75,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
   pan_forward: function(req, res){
     console.log('panned forward')
@@ -86,7 +86,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
 
 
@@ -100,7 +100,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
 
   down: function(req, res){
@@ -112,7 +112,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
 
   rotate_right: function(req, res){
@@ -124,7 +124,7 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
 
   rotate_left: function(req, res){
@@ -136,12 +136,12 @@ module.exports = {
       console.log('stopped')
     }, 500);
 
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
   stop: function(req, res){
     console.log('stopped')
     drone.stop()
-    res.status(200).send("Fuckin neato.")
+    res.status(200).send("I can fly!")
   },
 
 
@@ -155,7 +155,7 @@ module.exports = {
     setTimeout(function() {
       drone.emergency();
     }, 1300);
-  res.status(200).send("Fuckin neato.")
+  res.status(200).send("I can fly!")
   },
 
 ///////////////Keyboard Specific Functions/////////////////

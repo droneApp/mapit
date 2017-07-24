@@ -85,7 +85,7 @@ app.post('/key-pan-forward', manualMotions.w_pan_forward)
 
 // keyboard y-axis
 app.post('/key-up', manualMotions.up_arrow)
-app.post('key-down', manualMotions.down_arrow)
+app.post('/key-down', manualMotions.down_arrow)
 app.post('/key-rotate-right', manualMotions.rotate_right_arrow)
 app.post('/key-rotate-left', manualMotions.rotate_left_arrow)
 
