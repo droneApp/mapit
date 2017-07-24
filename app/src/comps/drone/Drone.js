@@ -32,14 +32,14 @@ export default class Drone extends Component {
 // end of constructor
   }
 componentDidMount() {
-  window.addEventListener('keydown', this.handleKeyDown);
-  window.addEventListener('keyup', this.handleKeyUp);
+  document.addEventListener('keydown', this.handleKeyDown);
+  document.addEventListener('keyup', this.handleKeyUp);
   document.addEventListener('keypress', this.handleKeyPress);
 }
 
 componentWillUnmount() {
-  window.removeEventListener('keydown', this.handleKeyDown);
-  window.removeEventListener('keyup', this.handleKeyUp);
+  document.removeEventListener('keydown', this.handleKeyDown);
+  document.removeEventListener('keyup', this.handleKeyUp);
   document.removeEventListener('keypress', this.handleKeyPress);
 }
 
@@ -132,7 +132,8 @@ componentWillUnmount() {
 
 // keyboard function groundwork
   handleKeyPress(e){
-    switch(e.key){
+    console.log('keypress', e.key)
+    switch(e.key) {
     case 'Enter': 
       return Axios.post('http://localhost:3000/connect').then(resp => {
         console.log('connect: ', resp)
@@ -143,83 +144,104 @@ componentWillUnmount() {
         console.log('land: ', resp)
       })
       break;
-      case 'Alt':
+      case '/':
       console.log('work please')
       return Axios.post('http://localhost:3000/launch').then(resp => {
         console.log('take-off: ', resp)
       })
+      break;
   }
   }
 
   handleKeyDown(e){
-    if(e.charCode === 65) {
+    console.log('keydown', e.key)
+    switch(e.key) {
+      case 'a':
       return Axios.post('http://localhost:3000/key-pan-left').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode === 83) {
+      break;
+      case 's':
       return Axios.post('http://localhost:3000/key-pan-back').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode === 68) {
+      break;
+      case 'd':
       return Axios.post('http://localhost:3000/key-pan-right').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode === 87) {
+      break;
+      case 'w':
       return Axios.post('http://localhost:3000/key-pan-forward').then(resp => {
         console.log('x-move: ', resp)
       })
-    }else if(e.charCode === 73) {
+      break;
+      case 'i':
       return Axios.post('http://localhost:3000/key-up').then(resp => {
         console.log('y-move: ', resp)
       })
-    }else if(e.charCode === 75) {
+      break;
+      case 'k':
       return Axios.post('http://localhost:3000/key-down').then(resp => {
         console.log('y-move: ', resp)
       })
-    }else if(e.charCode === 76) {
+      break;
+      case 'l':
       return Axios.post('http://localhost:3000/key-rotate-right').then(resp => {
         console.log('y-move: ', resp)
       })
-    }else if(e.charCode === 74) {
+      break;
+      case 'j':
       return Axios.post('http://localhost:3000/key-rotate-left').then(resp => {
         console.log('y-move: ', resp)
       })
+      break;
     }
   }
 
 handleKeyUp(e){
-    if(e.charCode === 65) {
+  console.log('keyup', e.key)
+  switch(e.key) {
+    case 'a':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode === 83) {
+    break;
+    case 's':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode === 68) {
+    break;
+    case 'd':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode === 87) {
+    break;
+    case 'w':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('x-move: ', resp)
     })
-  }else if(e.charCode === 73) {
+    break;
+    case 'i':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
-  }else if(e.charCode === 75) {
+    break;
+    case 'k':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
-  }else if(e.charCode === 76) {
+    break;
+    case 'l':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
-  }else if(e.charCode === 74) {
+    break;
+    case 'j':
     return Axios.post('http://localhost:3000/stop').then(resp => {
       console.log('y-move: ', resp)
     })
+    break;
   }
 }
 
