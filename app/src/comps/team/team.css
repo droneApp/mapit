@@ -1,6 +1,5 @@
 .team-background{
     position: absolute;
-     background-color: var(--secondary-bg-color);
      height: 190%;
      width: 100%;
      opacity: 0.9;
@@ -10,6 +9,7 @@
         font-size: 30px;
         display: flex;
         justify-content: center;
+        padding-bottom:20px;
     }
 
 .team-title{
@@ -18,6 +18,7 @@
     align-items: baseline;
     margin-bottom: 30px;
 }
+
 .team-title h1{
     padding-top:15px; 
 }
@@ -30,17 +31,9 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
-.middle {
-    transition: .5s ease;
-  opacity: 0;
-   position: relative; 
-   bottom: 50%; 
-   left: 50%; 
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
+
 .steen{
-     width: 346px;
+        width: 346px;
         height:461px;
 }
     .dallin{
@@ -48,16 +41,16 @@
         height: 459px;
     }
     .sean{
-width: 345px;
+        width: 345px;
         height: 459px;
     }
     .jacob{
-width: 345px;
+        width: 345px;
         height: 459px;
     }
 .our-text{
     background-color: #4CAF50;
-    color: white;
+    color: black;
     font-size: 16px;
     padding: 16px 32px;
     height: 15vh;
@@ -67,11 +60,16 @@ width: 345px;
     justify-content: center;
 }
 .linkedIn{
+    display: block;
     height:30px;
     width:30px;
-    padding-top: 10px;
-    
-
+    padding-top: 60px;
+}
+.linkedIn:hover {
+   color:red;
+   height:40px;
+    width:40px;
+  
 }
 
 .steen:hover .steen-team-pics {
@@ -116,7 +114,7 @@ width: 345px;
 }
 
 .full-page {
-    color: whitesmoke;
+    color: black;
     height:190vh;
 }
 
@@ -150,7 +148,7 @@ width: 345px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 73px;
+    padding-top: 3px;
      padding-bottom: 70px;
      z-index:9000;
 }
