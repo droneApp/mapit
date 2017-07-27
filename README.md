@@ -38,7 +38,7 @@ In our server.js file you will find functions that will use keywords from <a hre
 2. Create your branch (git checkout -b feature-name)
 3. Commit your changes (git commit -m 'new feature')
 4. Push to your branch (git push origin branch name)
-5. Create Pull Request (Denial is imminent)
+5. Create Pull Request
 
 ## Known Issues
 
@@ -46,13 +46,13 @@ If you discover any bugs, feel free to create an issue on GitHub and send us a p
 
 ## Authors
 
-Steen Sargent - look at steen its sandra dee - https://github.com/sargent88
+Steen Sargent - https://github.com/sargent88
 
-Dallin Anderson - WOW ITs GREASED LIGHTNING - https://github.com/Dallin11
+Dallin Anderson - https://github.com/Dallin11
 
-Jacob Aintablian -  Summer loving had me a blast, I met a girl crazy for meeee - https://github.com/orszarvu
+Jacob Aintablian - https://github.com/orszarvu
 
-Sean Ruffalo - we go together like gramalamalama yippity digty dong - https://github.com/sevensidedsilver
+Sean Ruffalo - https://github.com/sevensidedsilver
 
 ## Copyright?
 
