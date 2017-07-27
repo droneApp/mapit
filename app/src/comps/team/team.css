@@ -35,18 +35,20 @@
 .steen{
         width: 346px;
         height:461px;
+        padding-bottom: 60px;
 }
     .dallin{
         width: 345px;
-        height: 459px;
+        height: 250px;
+        padding-bottom: 272px;
     }
     .sean{
         width: 345px;
-        height: 459px;
+        height: 250px;
     }
     .jacob{
         width: 345px;
-        height: 459px;
+        height: 250px;
     }
 .our-text{
     background-color: #4CAF50;
@@ -63,7 +65,7 @@
     display: block;
     height:30px;
     width:30px;
-    padding-top: 60px;
+    padding-bottom: -60px;
 }
 .linkedIn:hover {
    color:red;
@@ -80,6 +82,7 @@
 }
 .steen:hover .middle{
     opacity: 1;
+    margin-top: 30%;
 }
 
 .dallin:hover .team-pics {
@@ -115,21 +118,23 @@
 
 .full-page {
     color: black;
-    height:190vh;
+    height:112vh;
 }
 
 .steen-team-pics{
-        width: 346px;
-        height:461px;
-        transition: .5s ease;
+  width: 209px;
+  height: 239px;
+  border-radius: 67px;
+  transition: .5s ease;
   backface-visibility: hidden;
   opacity: 1;
   display: block;
-  border-radius: 90px;
+
 }
 .team-pics {
-    height:68vh;
-    border-radius: 90px;
+   width: 209px;
+    height: 239px;
+    border-radius: 67px;
     
     
     
@@ -140,8 +145,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: -185px;
     z-index: 9000;
+    margin-top:-35px;
+
 }
 
 .bottom-row{
