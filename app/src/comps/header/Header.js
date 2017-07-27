@@ -51,7 +51,7 @@ render(){
          <div className="logoContain">
              <div className="logo">
              {this.props.children}
-               <h4>[logo]</h4>
+               <img className="our-logo" src="./logo/logo.png" alt="LOGO"/>
              </div>
            </div>
 
