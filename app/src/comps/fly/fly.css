@@ -2,11 +2,19 @@
     height: 400px;
 }
 
+
+/*MAP 1 TAB  */
+#mapContainDiv {
+  height: 100vh;
+}
+
+
 .all-tabs { 
- background-color: black !important; 
+ background-color: black !important;
 
 }
 .all-tabs:hover{
     letter-spacing: 3px;
-     background-color:#2d2d2d !important; 
+     background-color:#2d2d2d !important;
+
 }

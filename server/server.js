@@ -30,7 +30,7 @@ app.use(session({
 
 }));
 
-app.use(express.static('./src'));
+  app.use(express.static('../app/build'));
 //enable cross origin requests
 app.use(function(req, res, next){
   res.header("Access-Control-Allow-Origin", "*");

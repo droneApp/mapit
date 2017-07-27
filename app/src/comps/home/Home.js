@@ -10,7 +10,7 @@ import Parallax from 'parallax-js'
 //import Background from '../../public/homeImgs/map-bg.png';
 
 import './home.css'
-
+import TopFold from './topFold'
 export default class Home extends React.Component {
 
 
@@ -33,6 +33,8 @@ render(){
     <main>
         <Header />
         <section>
+
+
           <h1 className="homeHeader">Drone Maps in 3 Simple Steps</h1>
 
           <div className="bannerContain">

@@ -6,59 +6,57 @@
 //
 // import './map.css'
 //
-// import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+// import { withGoogleMap, GoogleMap, InfoWindow, Marker } from "react-google-maps";
 //
-// // Wrap all `react-google-maps` components with `withGoogleMap` HOC
-// // and name it GettingStartedGoogleMap
+// import {geolocated} from 'react-geolocated';
+// import canUseDOM from "can-use-dom"
+// import raf from "raf"
+//
+// const geolocation = (
+//   canUseDOM && navigator.geolocation ?
+//   navigator.geolocation :
+//   ({
+//     getCurrentPosition(success, failure) {
+//       failure(`Your browser doesn't support geolocation.`);
+//     },
+//   })
+// );
+//
 //
 // const Newmap = withGoogleMap(props => {
 //
-//   // this.props = {
-//   //   markers: [{
-//   //     position: {
-//   //       lat: 25.0112183,
-//   //       lng: 121.52067570000001,
-//   //     },
-//   //     key: `Taiwan`,
-//   //     defaultAnimation: 2,
-//   //   }],
-//   // };
+//   var markers = [
+//     {
+//       location: {
+//         lat: 40.75,
+//         lng: -73.98
+//       }
+//     }
 //
 //
+//
+//   ]
+//
+// return (
+// 
 //   <GoogleMap
-//
 //     ref={props.onMapLoad}
-//     defaultZoom={3}
-//     defaultCenter={{ lat: -25.363882, lng: 131.044922 }}
-//     onClick={props.onMapClick}
+//     defaultZoom= {14}
+//
+//
+//     defaultCenter={{ lat: 45.6944, lng: -93.9213}}
+//     markers={markers}
 //   >
-//
-//     {props.markers.map((marker, index) => (
-//       <Marker
-//         {...marker}
-//         onRightClick={() => props.onMarkerRightClick(index)}
-//       />
-//     ))}
+//     <Marker
+//       //key={}
+//       position={Marker.position}
+//       onClick={() => props.onMarkerClick(Marker)}
+//     />
 //   </GoogleMap>
+//
+//
+// )
+//
+//
 // });
-// // Then, render it:
-//
-// render(
-//
-//   <Newmap
-//
-//     containerElement={
-//       <div style={{ height: `100%` }} />
-//     }
-//     mapElement={
-//       <div style={{ height: `100%` }} />
-//     }
-//     // onMapLoad={_.noop}
-//     // onMapClick={_.noop}
-//     // markers={markers}
-//     // onMarkerRightClick={_.noop}
-//   />,
-//   document.getElementById('root')
-// );
-//
 // export default Newmap

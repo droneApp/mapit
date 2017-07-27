@@ -7,6 +7,8 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 import Drone from '../drone/Drone';
 
+import MapContain from '../newMap/MapContain'
+import Newmap from '../newMap/Map'
 
 
 // import header footer
@@ -52,12 +54,12 @@ const TabsExampleSimple = () => (
       </div>
     </Tab>
     <Tab className="all-tabs" label="Map 1" >
-      <div>
-        <h2 style={styles.headline}>Map1</h2>
-        <p>
-          This is another example tab.
-        </p>
-      </div>
+
+
+        <div id="mapContainDiv">
+          <MapContain/>
+        </div>
+
     </Tab>
     <Tab className="all-tabs"
       label="Map 2"
@@ -78,45 +80,3 @@ const TabsExampleSimple = () => (
   </div>
 )
 export default TabsExampleSimple;
-
-
-// import { Switch, HashRouter, Route} from 'react-router-dom';
-
-
-
-
-// class Fly extends Component {
-// constructor(props){
-//   super(props)
-//   this.state= {}
-// }
-
-//   render() {
-//     return (
-//       <main>
-//       <Header />
-
-
-
-
-//       <div className="controllerContain">
-
-//          <Link to="Tab"><h4>Tab</h4></Link>
-//          <Link to="Tab2"><h4>Tab2</h4></Link>
-
-//         <Drone/>
-
-
-//       </div>
-
-
-
-
-
-//       <Footer />
-//       </main>
-//     );
-//   }
-// }
-
-// export default Fly;
