@@ -1,6 +1,7 @@
 ## Drone Map-it
-Control your personal drone and stream video feed from your drone camera from your computer with a clean controller. (url of hosted)
-(image of controller)
+Control your personal drone and stream video feed from your drone camera from your computer with a clean controller.
+<!-- (url of hosted) -->
+<img src="/app/src/comps/drone/assets/readme.png">
 ## Getting Started
 Clone the repo
 
