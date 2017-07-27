@@ -15,10 +15,15 @@
     width:100%;
     font-size: 20px;
 }
+svg{
+    height:30vh;
+    width:250px;
+}
 
 #techDroneImg {
-    width: 170px;
-    height: 150px;
+    margin-top: -96px;
+    z-index: -9000;
+    height: 445px;
 }
 .scriptbox{
     display: flex;
@@ -29,19 +34,214 @@
     width:400px;
 }
 .techList{
-    margin-top: 15px;
-    margin-left:10vw;
-    margin-bottom:15px;
-    font-size:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     font-size:30px; 
+     padding-bottom: 51px;
+    
     
 }
-li{
-    list-style-type:none;
-    margin-top:5px;
-    margin-left: 10vw;
+
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+   position: relative; 
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height:30vh;
+  width:250px;
+}
+
+.our-text{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    height: 15vh;
+    width:282px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-icons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:70%;
+    height:70vh;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-bottom: 70px;
+}
+
+ 
 .techDrone{
     display: flex;
     justify-content: center;
     width:100%;
+    margin-bottom: -166px;
+}
+.tech-react{
+    height:25vh;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+  
+}
+.tech-react svg{
+   color:#61DAFB;
+   border: thick solid #61DAFB;
+   border-radius: 25px;
+   box-shadow: 10px 10px 5px #888888;
+}
+.tech-react:hover .middle2{
+    opacity:1;
+    color:black;
+}
+.tech-react:hover svg{
+    opacity: 0.1;
+    filter:blur(3px)
+}
+
+.tech-node{
+    height:25vh;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+
+}
+.tech-node svg{
+   border: thick solid #83CD29;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+.tech-node:hover .middle2{
+    opacity:1;
+    color:black;
+}
+.tech-node:hover svg{
+    opacity: 0.1;
+    filter:blur(3px)
+}
+
+.tech-sql{
+    height:25vh;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+   
+}
+.tech-sql svg{
+    border: thick solid #00618A;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+.tech-sql:hover .middle2{
+    opacity:1;
+    color:black;
+}
+.tech-sql:hover svg{
+    opacity: 0.1;
+    filter:blur(3px)
+}
+
+.tech-css{
+    height:25vh;
+  flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    
+
+}
+
+.tech-css svg{
+  border: thick solid #33A9DC;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+.tech-css:hover .middle2{
+    opacity:1;
+    color:black;
+}
+.tech-css:hover svg{
+    opacity: 0.1;
+    filter:blur(3px)
+}
+
+.tech-html{
+    height:25vh;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+
+}
+
+.tech-html svg{
+  border: thick solid #F16529;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+.tech-html:hover .middle2{
+    opacity:1;
+    color:black;
+}
+.tech-html:hover svg{
+    opacity: 0.1;
+    filter:blur(3px)
+}
+
+.tech-bebob{
+    height:25vh;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+  
+}
+
+.tech-bebob svg{
+    border: thick solid #3D3B47; 
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px #888888;
+
+}
+
+.node-bebob-text{
+    margin-left:66px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.tech-bebob:hover .middle2{
+    opacity:1;
+    color:black;
+}
+.tech-bebob:hover svg{
+    opacity: 0.1;
+    filter:blur(3px)
+}
+
+.middle2 h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
