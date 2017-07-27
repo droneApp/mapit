@@ -39,6 +39,7 @@
     "rimraf": "^2.5.4",
     "standard-version": "^4.0.0"
   },
+  "homepage" : "https://git.heroku.com/dronemapit.git",
   "dependencies": {
     "axios": "^0.16.2",
     "babel-runtime": "^6.11.6",
