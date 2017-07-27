@@ -1,5 +1,5 @@
 div{
-    user-select: none;  
+    user-select: none;
 }
 .videofeed{
     position: relative;
@@ -17,15 +17,15 @@ div{
 }
 .Pads{
     padding-top:10px;
-	display: flex;
+	  display: flex;
     justify-content: space-around;
     height:100px;
 }
 .Pad1{
-     padding-left:8vw; 
+     padding-left:8vw;
 }
 .Pad2{
-     padding-left:8vw; 
+     padding-left:8vw;
 }
 
 .scopein{
@@ -134,7 +134,7 @@ div{
     font-weight: bold;
     font-size:8.5px;
     height:66px;
-    width:105px; 
+    width:105px;
     border: 2px solid;
     border-radius:8px;
     background-color: #A7A9A8;
@@ -155,14 +155,14 @@ div{
 
 
 .counterclock{
-    transform: rotate(90deg);  
+    transform: rotate(90deg);
     font-size: 43px;
     text-align: center;
     padding-left:5px;
     color:whitesmoke;
 }
 .clockwise{
-    transform: rotate(180deg);  
+    transform: rotate(180deg);
     font-size: 43px;
     padding-bottom:3px;
     padding-left:2px;
@@ -171,30 +171,30 @@ div{
 }
 
 .downarrow{
-    transform: rotate(135deg);  
+    transform: rotate(135deg);
     font-size: 22px;
     padding-top:80px;
-    padding-right:36px; 
+    padding-right:36px;
     color:white;
 }
 .uparrow{
-    position: absolute; 
-    transform: rotate(-45deg);  
+    position: absolute;
+    transform: rotate(-45deg);
     font-size: 22px;
     padding-left: 2px;
     color: white;
-    
+
 }
 .down{
     position: absolute;
-    transform: rotate(135deg);  
+    transform: rotate(135deg);
     font-size: 17px;
     padding-left:40px;
     padding-top: 17px;
     color:white;
 }
 .up{
-    transform: rotate(-45deg);  
+    transform: rotate(-45deg);
     font-size: 20px;
     text-align: center;
     width:50px;
@@ -203,7 +203,7 @@ div{
     color:white;
 }
 .diamondtext{
-    transform: rotate(45deg);  
+    transform: rotate(45deg);
     font-size: 28px;
     text-align: center;
     padding-left: 5px;
@@ -219,13 +219,13 @@ div{
     height: 50px;
     background: blue;
     transform: rotate(-45deg);
-    box-shadow: 4px 4px 5px #999; 
+    box-shadow: 4px 4px 5px #999;
 }
 .pad1left:hover{background-color: darkblue}
 .pad1left:active{
     box-shadow:3px 3px 3px #777;
     transform: rotate(-45deg) translateX(2px) translateY(2px);
-    
+
 }
 .pad1down {
     cursor:pointer;
@@ -235,8 +235,8 @@ div{
     width: 50px;
     height: 50px;
     background: green;
-    transform: rotate(-135deg); 
-    box-shadow: 4px 4px 5px #999; 
+    transform: rotate(-135deg);
+    box-shadow: 4px 4px 5px #999;
 }
 .pad1down:hover{background-color: darkgreen}
 .pad1down:active{
@@ -251,8 +251,8 @@ div{
     width: 50px;
     height: 50px;
     background: red;
-    transform: rotate(135deg); 
-    box-shadow: 4px 4px 5px #999; 
+    transform: rotate(135deg);
+    box-shadow: 4px 4px 5px #999;
 }
 .pad1right:hover{background-color: darkred}
 .pad1right:active{
@@ -267,8 +267,8 @@ div{
     width: 50px;
     height: 50px;
     background: gold;
-    transform: rotate(45deg); 
-    box-shadow: 4px 4px 5px #999; 
+    transform: rotate(45deg);
+    box-shadow: 4px 4px 5px #999;
 }
 .pad1up:hover{background-color: darkgoldenrod}
 .pad1up:active{
@@ -289,7 +289,7 @@ div{
     }
     .take-off{
         margin-left:-1vw;
-         margin-top:10px; 
+         margin-top:10px;
         height:20px;
         width:100px;
         font-size:16px;
@@ -301,14 +301,14 @@ div{
         height:20px;
         font-weight:bold;
         font-size:16px;
-        
+
     }
     .createdest{
         left:47vw;
         font-size:14px;
         width:90px;
         height:30px;
-    
+
     }
     .autopilot{
         left:47vw;

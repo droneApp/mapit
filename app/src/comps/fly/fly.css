@@ -2,6 +2,13 @@
     height: 400px;
 }
 
-.all-tabs { 
+/*MAP 1 TAB  */
+#mapContainDiv {
+  height: 100vh;
+}
+
+
+
+.all-tabs {
 background-color: var(--primary-bg-color) !important;
 }
