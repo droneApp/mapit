@@ -164,22 +164,23 @@ module.exports = {
 
   a_pan_left: function(req, res){
     console.log('key pan left')
-    drone.left(50)
+    drone.left(10)
+    console.log(Object.keys(drone.SpeedSettings))
     res.status(200).send("I'm Flying.")
   },
   s_pan_back: function(req, res){
     console.log('key pan back')
-    drone.back(50)
+    drone.back(10)
     res.status(200).send("I'm Flying.")
   },
   d_pan_right: function(req, res){
     console.log('key pan right')
-    drone.right(50)
+    drone.right(10)
     res.status(200).send("I'm Flying.")
   },
   w_pan_forward: function(req, res){
     console.log('key pan forward')
-    drone.forward(50)
+    drone.forward(10)
     res.status(200).send("I'm Flying.")
   },
 
@@ -187,22 +188,22 @@ module.exports = {
 
   up_arrow: function(req, res){
     console.log('key going up')
-    drone.up(50)
+    drone.up(10)
     res.status(200).send("I'm Flying.")
   },
   down_arrow: function(req, res){
     console.log('key going down')
-    drone.down(50)
+    drone.down(10)
     res.status(200).send("I'm Flying.")
   },
   rotate_right_arrow: function(req, res){
     console.log('key rotate right')
-    drone.clockwise(50)
+    drone.clockwise(10)
     res.status(200).send("I'm Flying.")
   },
   rotate_left_arrow: function(req, res){
     console.log('key rotate left')
-    drone.counterClockwise(50)
+    drone.counterClockwise(10)
     res.status(200).send("I'm Flying.")
   }
 
