@@ -87,7 +87,7 @@ return (
 <Footer/>
 </main>
 );
-}
+    }
 }
 
 export default App
