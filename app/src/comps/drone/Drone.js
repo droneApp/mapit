@@ -28,7 +28,7 @@ export default class Drone extends Component {
   this.rotateRight = this.rotateRight.bind(this)
   this.stop = this.stop.bind(this)
   this.launch = this.launch.bind(this)
-  this.connect = this.connect.bind(this)
+  // this.connect = this.connect.bind(this)
 
 // end of constructor
   }
@@ -49,12 +49,12 @@ componentWillUnmount() {
 
 
   // click function groundwork
-  connect(){
-    console.log('video stream')
-    return Axios.post('http://localhost:3000/connect').then(resp => {
-      console.log(resp)
-    })
-  }
+  // connect(){
+  //   console.log('video stream')
+  //   return Axios.post('http://localhost:3000/connect').then(resp => {
+  //     console.log(resp)
+  //   })
+  // }
   launch(){
     console.log('launching')
     return Axios.post('http://localhost:3000/launch').then(resp => {
@@ -135,10 +135,10 @@ componentWillUnmount() {
   handleKeyPress(e){
     // console.log('keypress', e.key)
     switch(e.key) {
-    case 'Enter': 
-      return Axios.post('http://localhost:3000/connect').then(resp => {
-        console.log('connect: ', resp)
-      })
+    // case 'Enter': 
+    //   return Axios.post('http://localhost:3000/connect').then(resp => {
+    //     console.log('connect: ', resp)
+    //   })
       // break;
     case ' ': 
       return Axios.post('http://localhost:3000/land').then(resp => {
