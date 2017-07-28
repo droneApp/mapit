@@ -1,16 +1,17 @@
 .team-background{
-    position: absolute;
-     height: 190%;
-     width: 100%;
-     opacity: 0.9;
-     z-index: -1;
+    /* position: absolute; */
+    /* height: 190%; */
+    width: 100%;
+    /* opacity: 0.9; */
+    /* z-index: -1; */
 }
-    .team-names{
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        padding-bottom:20px;
-    }
+
+.team-names{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom:20px;
+}
 
 .team-title{
     display: flex;
@@ -22,55 +23,67 @@
 .team-title h1{
     padding-top:15px; 
 }
+
 .middle {
     transition: .5s ease;
-  opacity: 0;
-   position: relative; 
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+    opacity: 0;
+    position: relative; 
+    bottom: 57%; 
+    left: 73%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.middle-steen {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative; 
+    bottom: 32%; 
+    left: 73.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
 }
 
 .steen{
-        width: 346px;
-        height:461px;
-        padding-bottom: 60px;
+    width: 346px;
+    height:461px;
+    padding-bottom: 60px;
 }
-    .dallin{
-        width: 345px;
-        height: 250px;
-        padding-bottom: 272px;
-    }
-    .sean{
-        width: 345px;
-        height: 250px;
-    }
-    .jacob{
-        width: 345px;
-        height: 250px;
-    }
-.our-text{
-    background-color: #4CAF50;
-    color: black;
-    font-size: 16px;
+.dallin{
+    width: 345px;
+    height: 250px;
+    padding-bottom: 272px;
+}
+.sean{
+    width: 345px;
+    height: 250px;
+}
+.jacob{
+    width: 345px;
+    height: 250px;
+}
+ .our-text{
+    background-color: #800000;
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
     padding: 16px 32px;
-    height: 15vh;
-    width:282px;
+    height: 11vh;
+    width:120px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    position: inherit;
+} 
 .linkedIn{
-    display: block;
+    /* display: block; */
     height:30px;
     width:30px;
-    padding-bottom: -60px;
+    /* padding-bottom: -65px; */
 }
 .linkedIn:hover {
-   color:red;
-   height:40px;
-    width:40px;
+   /* color:red; */
+    height:32px;
+    width:32px; 
   
 }
 
@@ -80,16 +93,16 @@
 
     
 }
-.steen:hover .middle{
+.steen:hover .middle-steen{
     opacity: 1;
-    margin-top: 30%;
+    /* margin-top: 30%; */
 }
 
 .dallin:hover .team-pics {
  display: block;
  opacity: 0.3;
- display: flex;
- align-items: baseline;
+ /* display: flex;
+ align-items: baseline; */
 
     
 }
@@ -125,20 +138,16 @@
   width: 209px;
   height: 239px;
   border-radius: 67px;
-  transition: .5s ease;
+  /* transition: .5s ease;
   backface-visibility: hidden;
   opacity: 1;
-  display: block;
+  display: block; */
 
 }
 .team-pics {
-   width: 209px;
+    width: 209px;
     height: 239px;
     border-radius: 67px;
-    
-    
-    
-    
 }
 
 .top-row{
