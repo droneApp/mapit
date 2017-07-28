@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './drone.css'
-import keys from './Keycode.js';
+// import keys from './Keycode.js';
 
 
 import Axios from 'axios'
@@ -11,7 +11,7 @@ export default class Drone extends Component {
     super(props)
     this.state = {
       droneAction: ''
-    },
+    }
 
     // this.handleKeyDown = this.handleKeyDown.bind(this);
     // this.handleKeyUp = this.handleKeyUp.bind(this);
@@ -27,20 +27,21 @@ export default class Drone extends Component {
   this.rotateLeft = this.rotateLeft.bind(this)
   this.rotateRight = this.rotateRight.bind(this)
   this.stop = this.stop.bind(this)
-
+  this.launch = this.launch.bind(this)
+  this.connect = this.connect.bind(this)
 
 // end of constructor
   }
 componentDidMount() {
   // document.addEventListener('keydown', this.handleKeyDown);
   // document.addEventListener('keyup', this.handleKeyUp);
-  document.addEventListener('keypress', this.handleKeyPress);
+  window.addEventListener('keypress', this.handleKeyPress);
 }
 
 componentWillUnmount() {
   // document.removeEventListener('keydown', this.handleKeyDown);
   // document.removeEventListener('keyup', this.handleKeyUp);
-  document.removeEventListener('keypress', this.handleKeyPress);
+  window.removeEventListener('keypress', this.handleKeyPress);
 }
 
 
@@ -138,57 +139,57 @@ componentWillUnmount() {
       return Axios.post('http://localhost:3000/connect').then(resp => {
         console.log('connect: ', resp)
       })
-      break;
+      // break;
     case ' ': 
       return Axios.post('http://localhost:3000/land').then(resp => {
         console.log('land: ', resp)
       })
-      break;
+      // break;
       case '/':
       return Axios.post('http://localhost:3000/launch').then(resp => {
         console.log('take-off: ', resp)
       })
-      break;
+      // break;
             case 'a':
       return Axios.post('http://localhost:3000/pan-left').then(resp => {
         console.log('x-move: ', resp)
       })
-      break;
+      // break;
       case 's':
       return Axios.post('http://localhost:3000/pan-back').then(resp => {
         console.log('x-move: ', resp)
       })
-      break;
+      // break;
       case 'd':
       return Axios.post('http://localhost:3000/pan-right').then(resp => {
         console.log('x-move: ', resp)
       })
-      break;
+      // break;
       case 'w':
       return Axios.post('http://localhost:3000/pan-forward').then(resp => {
         console.log('x-move: ', resp)
       })
-      break;
+      // break;
       case 'i':
       return Axios.post('http://localhost:3000/up').then(resp => {
         console.log('y-move: ', resp)
       })
-      break;
+      // break;
       case 'k':
       return Axios.post('http://localhost:3000/down').then(resp => {
         console.log('y-move: ', resp)
       })
-      break;
+      // break;
       case 'l':
       return Axios.post('http://localhost:3000/rotate-right').then(resp => {
         console.log('y-move: ', resp)
       })
-      break;
+      // break;
       case 'j':
       return Axios.post('http://localhost:3000/rotate-left').then(resp => {
         console.log('y-move: ', resp)
       })
-      break;
+      // break;
   }
   }
 

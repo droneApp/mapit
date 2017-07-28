@@ -43,7 +43,7 @@ return (
 </div>
 
 <div className="middle">
-<p className="our-text">Dallin as casual as he stands against this tree shows his true love for...  </p>
+<p className="our-text">Dallin as casual as he stands against this tree shows his true love for...</p>
 </div>
 </div>
 </container>
@@ -76,7 +76,7 @@ return (
 <a href="https://www.linkedin.com/in/ruffolos/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png' alt="" /></a>
 </div>
 <div className="middle">
-<p className="our-text">Sean loves holding Dogs around his neck but what he loves more is flying drones into the ceiling.  </p>
+<p className="our-text">Sean loves holding Dogs around his neck but what he loves more is flying drones into the ceiling.</p>
 </div>
 </div>
 
