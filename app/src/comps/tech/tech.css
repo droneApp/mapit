@@ -61,18 +61,6 @@ svg{
   width:250px;
 }
 
-.our-text{
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-    height: 15vh;
-    width:282px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .tech-icons{
     display:flex;
     justify-content: space-around;

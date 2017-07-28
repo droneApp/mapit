@@ -12,30 +12,25 @@ const drone = bebop.createClient()
 module.exports = {
 
 
-  connect: function (req, res){
-    // create client
-     console.log('connected with video')
-    const drone = bebop.createClient()
-    drone.connect(function() {
-    //   var output;
-    //   var stream = drone.getVideoStream();
-    //   stream.on('data', function(buf){
-    //   output = buf;
-    // });
-    // drone.emit('video', new Buffer([0xff]));
-    // // expect(output[0]).to.equal(0xff);
-    })
-    res.status(200).send("I can fly!")
+  // connect: function (req, res){
+  //   // create client
+  //    console.log('connected with video')
+  //   const drone = bebop.createClient()
+  //   drone.connect(function() {
+  //   })
+  //   res.status(200).send("I can fly!")
    
-  },
+  // },
 
 
 
   launch: function(req, res){
 
     console.log('tookoff')
-    drone.takeOff(function(){
-      drone.stop()
+    drone.connect(function(){
+      drone.takeOff(function(){
+        drone.stop()
+      })
     })
     res.status(200).send("Launching Bebopboolopadoop.")
   
@@ -162,50 +157,50 @@ module.exports = {
 
 ///Pad 1///
 
-  a_pan_left: function(req, res){
-    console.log('key pan left')
-    drone.left(10)
-    console.log(Object.keys(drone.SpeedSettings))
-    res.status(200).send("I'm Flying.")
-  },
-  s_pan_back: function(req, res){
-    console.log('key pan back')
-    drone.back(10)
-    res.status(200).send("I'm Flying.")
-  },
-  d_pan_right: function(req, res){
-    console.log('key pan right')
-    drone.right(10)
-    res.status(200).send("I'm Flying.")
-  },
-  w_pan_forward: function(req, res){
-    console.log('key pan forward')
-    drone.forward(10)
-    res.status(200).send("I'm Flying.")
-  },
+  // a_pan_left: function(req, res){
+  //   console.log('key pan left')
+  //   drone.left(10)
+  //   console.log(Object.keys(drone.SpeedSettings))
+  //   res.status(200).send("I'm Flying.")
+  // },
+  // s_pan_back: function(req, res){
+  //   console.log('key pan back')
+  //   drone.back(10)
+  //   res.status(200).send("I'm Flying.")
+  // },
+  // d_pan_right: function(req, res){
+  //   console.log('key pan right')
+  //   drone.right(10)
+  //   res.status(200).send("I'm Flying.")
+  // },
+  // w_pan_forward: function(req, res){
+  //   console.log('key pan forward')
+  //   drone.forward(10)
+  //   res.status(200).send("I'm Flying.")
+  // },
 
 ///Pad 2///
 
-  up_arrow: function(req, res){
-    console.log('key going up')
-    drone.up(10)
-    res.status(200).send("I'm Flying.")
-  },
-  down_arrow: function(req, res){
-    console.log('key going down')
-    drone.down(10)
-    res.status(200).send("I'm Flying.")
-  },
-  rotate_right_arrow: function(req, res){
-    console.log('key rotate right')
-    drone.clockwise(10)
-    res.status(200).send("I'm Flying.")
-  },
-  rotate_left_arrow: function(req, res){
-    console.log('key rotate left')
-    drone.counterClockwise(10)
-    res.status(200).send("I'm Flying.")
-  }
+  // up_arrow: function(req, res){
+  //   console.log('key going up')
+  //   drone.up(10)
+  //   res.status(200).send("I'm Flying.")
+  // },
+  // down_arrow: function(req, res){
+  //   console.log('key going down')
+  //   drone.down(10)
+  //   res.status(200).send("I'm Flying.")
+  // },
+  // rotate_right_arrow: function(req, res){
+  //   console.log('key rotate right')
+  //   drone.clockwise(10)
+  //   res.status(200).send("I'm Flying.")
+  // },
+  // rotate_left_arrow: function(req, res){
+  //   console.log('key rotate left')
+  //   drone.counterClockwise(10)
+  //   res.status(200).send("I'm Flying.")
+  // }
 
 
 // end of exports
