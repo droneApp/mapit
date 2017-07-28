@@ -25,9 +25,9 @@ return (
    <container className="all-steen">
  <div className="steen">
   <h3 className="team-names">Steen</h3>  
-<img className='steen-team-pics' src='./our-pics/16797776_10158254923960300_8611520582224132040_o.jpg' />
-<a href="https://www.linkedin.com/in/steen-sargent/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png'/></a>
-    <div className="middle">
+<img className='steen-team-pics' src='./our-pics/16797776_10158254923960300_8611520582224132040_o.jpg' alt=""/>
+<a href="https://www.linkedin.com/in/steen-sargent/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png' alt="" /></a>
+    <div className="middle-steen">
 <p className="our-text">Steen Is a man of all men and brought more than just his good looks to our team... He also brought a drone.</p>
     </div>
 </div>
@@ -39,7 +39,7 @@ return (
 <h3 className="team-names">Dallin</h3>
 <img className='team-pics' src='./our-pics/FullSizeRender.jpg' alt="hello" />
 <div className="linkin-container">
-<a href="https://www.linkedin.com/in/andersondallin/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png'/></a>
+<a href="https://www.linkedin.com/in/andersondallin/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png' alt="" /></a>
 </div>
 
 <div className="middle">
@@ -56,9 +56,9 @@ return (
     <container className="all-jacob">
     <div className="jacob">
 <h3 className="team-names">Jacob</h3>
-<img className='team-pics' src='./our-pics/IMG_0051_720.JPG' />
+<img className='team-pics' src='./our-pics/IMG_0051_720.JPG' alt="" />
 <div className="linkin-container">
-<a href="https://www.linkedin.com/in/jacob-aintablian/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png'/></a>
+<a href="https://www.linkedin.com/in/jacob-aintablian/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png' alt="" /></a>
 </div>
 
 <div className="middle">
@@ -71,9 +71,9 @@ return (
 <container className="all-sean">
 <div className="sean">
 <h3 className="team-names">Sean</h3>
-<img className='team-pics' src='./our-pics/with-Doge.jpg' />
+<img className='team-pics' src='./our-pics/with-Doge.jpg' alt="" />
 <div className="linkin-container">
-<a href="https://www.linkedin.com/in/ruffolos/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png'/></a>
+<a href="https://www.linkedin.com/in/ruffolos/"><img className="linkedIn" src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png' alt="" /></a>
 </div>
 <div className="middle">
 <p className="our-text">Sean loves holding Dogs around his neck but what he loves more is flying drones into the ceiling.  </p>
