@@ -1,4 +1,6 @@
 ## Drone Map-it
+This is an app we created together in 2 weeks that uses ReactJS and NodeJS to controll a Parrot Bebop 2 drone.  You can you keyboard press or mouse clicks to control direction and pitch of the drone.
+
 Control your personal drone and stream video feed from your drone camera from your computer with a clean controller.
 <!-- (url of hosted) -->
 <img src="/app/src/comps/drone/assets/readme.png" style="width:400px height:400px" />
@@ -17,6 +19,7 @@ You will run npm start inside app where you should already be. We used the bebop
 
 After navigating to the Fly page and connecting to your drone
 <!-- (gif of clicking on navigating to fly page and fly) -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SxB5FxSONmQ" frameborder="0" allowfullscreen></iframe>
 
 You can use the controller to depart, land, and move your drone. the height is initially set to 50% of max height. Before immersing yourself test each button to see how it impacts your personal drone.
 
