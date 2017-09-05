@@ -19,7 +19,7 @@ You will run npm start inside app where you should already be. We used the bebop
 
 After navigating to the Fly page and connecting to your drone
 <!-- (gif of clicking on navigating to fly page and fly) -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SxB5FxSONmQ" frameborder="0" allowfullscreen></iframe>
+[![Mapit](https://img.youtube.com/vi/SxB5FxSONmQ/0.jpg)](http://www.youtube.com/watch?v=SxB5FxSONmQ)
 
 You can use the controller to depart, land, and move your drone. the height is initially set to 50% of max height. Before immersing yourself test each button to see how it impacts your personal drone.
 
